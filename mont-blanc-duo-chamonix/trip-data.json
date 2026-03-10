@@ -1,0 +1,612 @@
+{
+  "tripName": "Mont Blanc Duo — Guided Summit via the Gouter Route",
+  "subtitle": "Chamonix-Mont-Blanc, French Alps",
+  "dates": "July 13–17, 2026",
+  "overview": "The Mont Blanc Duo is one of the most respected guided mountaineering programmes in the Alps. Run by the Compagnie des Guides de Chamonix — the oldest guiding company in the world, founded in 1821 — it pairs two climbers with one UIAGM-certified guide for five days of acclimatization, technical preparation, and a full summit attempt on the highest peak in Western Europe.\n\nThe first two days are spent in the mountains above Chamonix, building altitude tolerance and crampon confidence on classic routes like the Aiguilles Crochues traverse and the Pointe Lachenal ridge near the Aiguille du Midi. These aren't just warm-ups — they're genuine alpine outings with stunning views of the Mont Blanc massif, and they give your guide the chance to assess your readiness before committing to the summit push.\n\nOn day three the real ascent begins. You ride the historic Tramway du Mont Blanc to the Nid d'Aigle and climb through a stark, beautiful landscape of moraine and snowfields to the Tete Rousse hut. The following morning, you cross the notorious Grand Couloir in the pre-dawn darkness, ascend the rocky Aiguille du Gouter to the modern Gouter refuge, and push on through the Dome du Gouter and the exposed Bosses Ridge to stand on the summit at 4,808 metres — the rooftop of the Alps. The descent on the final day brings you back to the Nid d'Aigle and the valley, where Chamonix awaits with cold beer and warm showers.\n\nThis is not a casual hike. It demands genuine fitness, mental resilience, and respect for high-altitude conditions. But for two people willing to put in the preparation, there is no more rewarding mountaineering experience in Europe.",
+  "highlights": [
+    "Summit of Mont Blanc (4,808m) — the highest point in Western Europe",
+    "Guided 1:2 ratio with UIAGM-certified Chamonix guide throughout",
+    "Acclimatization on the Aiguilles Crochues and Pointe Lachenal ridgelines",
+    "Night at the iconic Gouter Hut (3,817m) with sunset over the Alps",
+    "Crossing the Grand Couloir and ascending the dramatic Bosses Ridge",
+    "Panoramic views from the Dome du Gouter across four countries"
+  ],
+  "stats": {
+    "totalDistance": 32,
+    "totalAscent": 4050,
+    "totalDescent": 4050,
+    "duration": "5 days / 2 hut nights + 2 valley nights",
+    "difficulty": "Challenging (PD+ mountaineering grade)",
+    "region": "Mont Blanc Massif, Haute-Savoie, France"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Acclimatization — Aiguilles Crochues Traverse (2,840m)",
+      "distance": 10.0,
+      "ascent": 500,
+      "descent": 500,
+      "difficulty": "Moderate–Challenging",
+      "estimatedHours": 6,
+      "terrain": "Rocky ridge scramble (Grade 4c), exposed traverse, good trails on approach and descent via Lac Blanc",
+      "terrainTags": ["rock scrambling", "exposed ridge", "alpine trail", "lake approach"],
+      "description": "You meet your guide at 8:30am at the Compagnie des Guides office on Place de l'Eglise in Chamonix. After introductions and a gear check, you drive to Les Praz and take the Flegere cable car up to 1,877m, then the Index chairlift to 2,385m.\n\nFrom the top station, a well-marked path leads northwest toward the Col des Aiguilles Crochues at 2,704m. The landscape here is raw and mineral — shattered granite, patches of late-season snow, and the vast panorama of the Mont Blanc massif filling the southern horizon. The Aiguilles Crochues are a series of jagged rock pinnacles that form a dramatic ridgeline in the Aiguilles Rouges.\n\nThe traverse itself is the day's main event. Your guide ropes you up and leads you across a succession of small peaks, alternating between rocky scrambling and short climbing sections. The exposure is real but manageable, and the views are extraordinary — the Mer de Glace, the Grandes Jorasses, and Mont Blanc itself dominate the skyline across the valley.\n\nAfter completing the traverse, you descend via the Combe du Belvedere to Lac Blanc (2,352m), one of the most photographed spots in the French Alps. The milky turquoise lake sits in a granite bowl with Mont Blanc reflected in its surface. From here, a comfortable trail leads back to the Flegere lift station.\n\nBack in Chamonix, your guide debriefs over coffee. This day serves a dual purpose: acclimatizing your body to altitude and letting the guide assess your movement on rock, your comfort with exposure, and your overall fitness level. The evening is free — eat well and hydrate.",
+      "elevation": {
+        "min": 1877,
+        "max": 2840,
+        "profile": [[0,2385],[1.0,2450],[2.0,2550],[3.0,2704],[3.5,2780],[4.0,2840],[4.5,2800],[5.0,2750],[5.5,2650],[6.5,2520],[7.5,2352],[8.5,2200],[9.5,2050],[10.0,1877]]
+      },
+      "waypoints": [
+        {
+          "name": "Flegere Cable Car Top Station",
+          "type": "transport",
+          "km": 0,
+          "notes": "First lift at 8:00am. Combined ticket with Index chairlift available."
+        },
+        {
+          "name": "Col des Aiguilles Crochues",
+          "type": "viewpoint",
+          "km": 3.0,
+          "notes": "Start of the roped traverse. Gear up here — harness, helmet, rope."
+        },
+        {
+          "name": "Aiguilles Crochues Summit Ridge",
+          "type": "summit",
+          "km": 4.0,
+          "notes": "Highest point of the day at 2,840m. Exposed scrambling with guide."
+        },
+        {
+          "name": "Lac Blanc",
+          "type": "viewpoint",
+          "km": 7.5,
+          "notes": "Iconic Alpine lake with Mont Blanc reflection. Refuge du Lac Blanc has drinks and snacks."
+        },
+        {
+          "name": "Refuge du Lac Blanc",
+          "type": "food",
+          "km": 7.5,
+          "notes": "Good stop for a cold drink. Terrace with stunning views."
+        },
+        {
+          "name": "Flegere Lift Station (return)",
+          "type": "transport",
+          "km": 10.0,
+          "notes": "Last cable car down at 5:30pm in summer."
+        }
+      ],
+      "weather": {
+        "tempHigh": 15,
+        "tempLow": 5,
+        "precipitation": 25,
+        "wind": "10–20 km/h westerly",
+        "conditions": "Mostly sunny, afternoon cumulus clouds possible. Thunderstorm risk after 3pm.",
+        "daylight": "15h 50m",
+        "sunrise": "5:55am",
+        "sunset": "9:45pm",
+        "alerts": ["Afternoon thunderstorm risk in July — aim to finish the ridge traverse by early afternoon"]
+      },
+      "waterSources": ["Refuge du Lac Blanc (drinks for purchase)", "Streams near Lac Blanc area"],
+      "escapeRoutes": [
+        {"name": "Flegere cable car descent", "description": "Return to Flegere lift station at any point via signed trails. Cable car runs until 5:30pm.", "km": 0}
+      ],
+      "interestingLinks": [
+        {"title": "Aiguilles Crochues on Camptocamp", "url": "https://www.camptocamp.org/routes/54432/en", "type": "official"},
+        {"title": "Lac Blanc via Grand Balcon Sud on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/lac-blanc-via-grand-balcon-sud", "type": "alltrails"},
+        {"title": "Mont Blanc — Thin-Air Thrills at the Aiguille du Midi", "url": "https://www.youtube.com/watch?v=x4JkC3QOMSc", "type": "youtube"}
+      ],
+      "photos": [
+        {"query": "Aiguilles Crochues Chamonix traverse", "caption": "The Aiguilles Crochues ridgeline in the Aiguilles Rouges"},
+        {"query": "Lac Blanc Chamonix Mont Blanc reflection", "caption": "Lac Blanc with Mont Blanc reflected in its waters"},
+        {"query": "Flegere panorama Mont Blanc massif", "caption": "Panoramic view of the Mont Blanc massif from Flegere"}
+      ],
+      "accommodation": {
+        "name": "Hotel / apartment in Chamonix",
+        "type": "hotel",
+        "notes": "Valley accommodation not included in the package — book separately. Plenty of options in Chamonix centre within walking distance of the guides' office."
+      }
+    },
+    {
+      "day": 2,
+      "title": "Acclimatization — Pointe Lachenal Traverse (3,613m)",
+      "distance": 5.0,
+      "ascent": 250,
+      "descent": 480,
+      "difficulty": "Moderate (F mountaineering grade)",
+      "estimatedHours": 5,
+      "terrain": "Glacier travel on packed snow, rocky ridge, fixed cables. Crampons and rope required.",
+      "terrainTags": ["glacier", "snow arete", "fixed cables", "crevasse zone"],
+      "description": "Today takes you significantly higher — to 3,613m — which is critical preparation for the altitudes you'll face on Mont Blanc. You take the Aiguille du Midi cable car from Chamonix, one of the world's most spectacular lifts, rising from 1,035m to 3,842m in just 20 minutes. The views from the top platform are staggering: a 360-degree panorama of the entire Mont Blanc massif, the Matterhorn in the distance, and on clear days, a horizon stretching into Italy and Switzerland.\n\nFrom the top station, you descend the famous knife-edge arete on the south side — a narrow snow ridge with dizzying drops on both sides, protected by guide ropes. This deposits you onto the Glacier du Geant at approximately 3,600m. The air is noticeably thinner here, and you'll feel it in your breathing during any exertion.\n\nYour guide leads you across the glacier toward Pointe Lachenal (3,613m), a subsidiary peak offering a manageable but genuine alpine climbing experience. The traverse involves crampon work on moderate snow slopes and some rocky scrambling near the summit. It's the perfect rehearsal for the terrain you'll encounter higher on Mont Blanc.\n\nThe descent retraces your steps back to the Aiguille du Midi station. Total time on the mountain is typically 4–5 hours. Your guide uses this day to fine-tune your crampon technique, assess how you handle altitude, and make the final go/no-go decision for the summit attempt.\n\nBack in the valley, rest thoroughly. Tomorrow the real climb begins. Eat a substantial dinner, hydrate aggressively, and pack your summit bag. Your guide will brief you on the plan for the next three days.",
+      "elevation": {
+        "min": 3400,
+        "max": 3842,
+        "profile": [[0,3842],[0.5,3800],[1.0,3700],[1.5,3620],[2.0,3580],[2.5,3613],[3.0,3580],[3.5,3620],[4.0,3700],[4.5,3800],[5.0,3842]]
+      },
+      "waypoints": [
+        {
+          "name": "Aiguille du Midi Cable Car Top Station",
+          "type": "transport",
+          "km": 0,
+          "notes": "First car at 8:10am in summer. Book tickets in advance — sells out in July. Altitude: 3,842m."
+        },
+        {
+          "name": "Aiguille du Midi South Ridge Descent",
+          "type": "warning",
+          "km": 0.3,
+          "notes": "Narrow snow arete with fixed ropes. Crampons required. Steep drops on both sides — stay clipped in."
+        },
+        {
+          "name": "Glacier du Geant",
+          "type": "warning",
+          "km": 1.0,
+          "notes": "Crevassed glacier — roped travel mandatory. Follow guide's exact footsteps."
+        },
+        {
+          "name": "Pointe Lachenal Summit (3,613m)",
+          "type": "summit",
+          "km": 2.5,
+          "notes": "Rocky summit with 360-degree views. Good spot to test altitude response — note any headache or nausea."
+        },
+        {
+          "name": "Return to Aiguille du Midi Station",
+          "type": "transport",
+          "km": 5.0,
+          "notes": "Last cable car down at 5:30pm. Don't cut it close."
+        }
+      ],
+      "weather": {
+        "tempHigh": 5,
+        "tempLow": -5,
+        "precipitation": 20,
+        "wind": "15–30 km/h, gusting higher on ridges",
+        "conditions": "Clear in morning, cloud build-up likely by midday. Significantly colder at 3,600m+ than in valley.",
+        "daylight": "15h 50m",
+        "sunrise": "5:55am",
+        "sunset": "9:45pm",
+        "alerts": ["Altitude sickness symptoms can appear above 3,000m — report headache, nausea, or dizziness to guide immediately"]
+      },
+      "waterSources": ["Aiguille du Midi top station (cafe)", "Carry 1L minimum from valley"],
+      "escapeRoutes": [
+        {"name": "Return to Aiguille du Midi", "description": "Retrace steps back to the cable car station at any point. Guide will assess conditions.", "km": 0}
+      ],
+      "interestingLinks": [
+        {"title": "Aiguille du Midi webcam", "url": "https://www.chamonix.com/webcams", "type": "official"},
+        {"title": "Pointe Lachenal on Camptocamp", "url": "https://www.camptocamp.org/routes/54432", "type": "official"},
+        {"title": "Climbing the Cosmiques Arête — Aiguille du Midi", "url": "https://www.youtube.com/watch?v=48yBWBRkzqM", "type": "youtube"}
+      ],
+      "photos": [
+        {"query": "Aiguille du Midi cable car station panorama", "caption": "The Aiguille du Midi terrace at 3,842m"},
+        {"query": "Glacier du Geant Chamonix roped team", "caption": "Roped travel across the Glacier du Geant"},
+        {"query": "Pointe Lachenal Mont Blanc traverse", "caption": "The Pointe Lachenal traverse with Mont Blanc behind"}
+      ],
+      "accommodation": {
+        "name": "Hotel / apartment in Chamonix",
+        "type": "hotel",
+        "notes": "Same valley accommodation as Day 1. Early night recommended — tomorrow starts early."
+      }
+    },
+    {
+      "day": 3,
+      "title": "Nid d'Aigle to Refuge de Tete Rousse (3,167m)",
+      "distance": 3.5,
+      "ascent": 800,
+      "descent": 0,
+      "difficulty": "Moderate",
+      "estimatedHours": 3,
+      "terrain": "Well-marked mountain trail, moraine, some snow patches. No technical climbing.",
+      "terrainTags": ["moraine", "scree", "snowfield", "mountain trail"],
+      "description": "The summit push begins. You drive to the village of Les Houches or Saint-Gervais and take the Bellevue cable car, then transfer to the Tramway du Mont Blanc — a charming rack-and-pinion railway that grinds its way up through forests and meadows to the Nid d'Aigle at 2,372m. It's the highest railway station in France, and the views of the Bionnassay Glacier from the platform are spectacular.\n\nFrom the Nid d'Aigle, the trail heads south across a barren landscape of moraine and scree. The path is well-worn by generations of Mont Blanc aspirants — you're walking in the footsteps of climbers going back to the first ascent in 1786. The terrain is lunar: grey rock, scattered boulders, and patches of dirty snow. To your left, the massive snout of the Bionnassay Glacier creaks and groans.\n\nAfter about an hour, you pass the ruins of the old Baraque des Rognes at 2,800m, a former way-station now reduced to stone walls. The trail steepens here, zigzagging up through rocky terrain with the hut visible above. The final approach crosses some snowfields depending on the season.\n\nThe Refuge de Tete Rousse sits on a rocky shelf at 3,167m with commanding views down the valley toward Saint-Gervais and across to the Aiguilles. It's a relatively small hut (72 places) with dormitory bunks, a dining room, and basic washing facilities. Dinner is served communally — hearty mountain fare designed to fuel the next day's effort.\n\nYour guide briefs you on tomorrow's plan over dinner. Wake-up call will be around 2:00–3:00am. The Grand Couloir crossing must be done in the cold of pre-dawn when rockfall risk is lowest. Get to sleep early — the biggest day of your life starts in a few hours.",
+      "elevation": {
+        "min": 2372,
+        "max": 3167,
+        "profile": [[0,2372],[0.3,2420],[0.6,2480],[0.9,2540],[1.2,2600],[1.5,2670],[1.8,2740],[2.1,2800],[2.4,2870],[2.7,2950],[3.0,3050],[3.2,3100],[3.5,3167]]
+      },
+      "waypoints": [
+        {
+          "name": "Nid d'Aigle — Tramway du Mont Blanc terminus",
+          "type": "transport",
+          "km": 0,
+          "notes": "Altitude 2,372m. Tramway departs Saint-Gervais — check schedule. Last sections run in afternoon only. Toilets at station."
+        },
+        {
+          "name": "Bionnassay Glacier Viewpoint",
+          "type": "viewpoint",
+          "km": 0.5,
+          "notes": "Impressive view of the glacier tongue. Stay on the marked trail — crevasse danger off-path."
+        },
+        {
+          "name": "Baraque des Rognes (ruins)",
+          "type": "viewpoint",
+          "km": 2.1,
+          "notes": "Historic waystation at 2,800m. Good rest spot with views. Wind shelter behind the walls."
+        },
+        {
+          "name": "Snowfield crossing",
+          "type": "warning",
+          "km": 3.0,
+          "notes": "Late-season snowfield — may be icy in shade. Trekking poles helpful, crampons not usually needed."
+        },
+        {
+          "name": "Refuge de Tete Rousse",
+          "type": "campsite",
+          "km": 3.5,
+          "notes": "3,167m. Half-board included. Sleeping bag liner mandatory. Water available. Charge devices here — last reliable power before summit."
+        }
+      ],
+      "weather": {
+        "tempHigh": 10,
+        "tempLow": -2,
+        "precipitation": 20,
+        "wind": "10–25 km/h",
+        "conditions": "Typically clear mornings in July. Afternoon clouds build but rarely precipitate. Cool at hut elevation overnight.",
+        "daylight": "15h 50m",
+        "sunrise": "5:55am",
+        "sunset": "9:45pm",
+        "alerts": ["Drink at least 3 litres of water today to aid acclimatization"]
+      },
+      "waterSources": ["Nid d'Aigle station (toilets/tap)", "Streams near Baraque des Rognes (seasonal)", "Refuge de Tete Rousse (tap water)"],
+      "escapeRoutes": [
+        {"name": "Return to Nid d'Aigle", "description": "Retrace the approach trail back to the tramway station. 1.5–2 hours descent.", "km": 0}
+      ],
+      "interestingLinks": [
+        {"title": "Tramway du Mont Blanc schedule", "url": "https://www.montblancnaturalresort.com/en/tramway-du-mont-blanc", "type": "official"},
+        {"title": "Tete Rousse Hut info", "url": "https://climbmontblanc.com/huts-accommodation/tete-rousse-hut", "type": "blog"},
+        {"title": "Nid d'Aigle to Goûter Hut on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/refuge-du-nid-d-aigle-refuge-du-gouter", "type": "alltrails"},
+        {"title": "Rockfall in the Grand Couloir — Mont Blanc", "url": "https://www.youtube.com/watch?v=_LHwYupe_WE", "type": "youtube"}
+      ],
+      "photos": [
+        {"query": "Nid d'Aigle tramway Mont Blanc station", "caption": "The Nid d'Aigle station — highest railway in France"},
+        {"query": "Bionnassay glacier Chamonix", "caption": "The impressive Bionnassay Glacier from the approach trail"},
+        {"query": "Refuge Tete Rousse Mont Blanc", "caption": "Refuge de Tete Rousse perched at 3,167m"}
+      ],
+      "accommodation": {
+        "name": "Refuge de Tete Rousse (3,167m)",
+        "type": "refugio",
+        "notes": "Half-board included (dinner + breakfast). Dormitory bunks, communal dining. Sleeping bag liner mandatory. Limited hot water. Reservation required — quota system in effect."
+      }
+    },
+    {
+      "day": 4,
+      "title": "Summit Day — Mont Blanc (4,808m) via Gouter Route",
+      "distance": 9.0,
+      "ascent": 1900,
+      "descent": 990,
+      "difficulty": "Very Challenging (PD+)",
+      "estimatedHours": 10,
+      "terrain": "Grand Couloir rockfall zone, steep mixed rock/ice, glaciated ridge, high-altitude snow aretes. Full mountaineering equipment.",
+      "terrainTags": ["rockfall zone", "fixed cables", "glacier", "snow arete", "exposed ridge", "high altitude"],
+      "description": "This is it. The alarm goes off at 2:00am. Breakfast is brief and mechanical — bread, jam, hot drinks. Headlamps on, crampons fitted, roped up. You leave the Tete Rousse hut in complete darkness at around 3:00am.\n\nThe first challenge comes almost immediately: the Grand Couloir. This steep gully funnels rockfall from the cliffs above, and it is the single most dangerous section of the route. You cross it quickly and deliberately in the pre-dawn cold, when the rocks above are still frozen in place. Your guide will have timed this crossing carefully. The exposure is intimidating, but the actual crossing takes only 10–15 minutes.\n\nAbove the couloir, you climb steep rocky terrain on the flanks of the Aiguille du Gouter. This is sustained scrambling with some cable-equipped sections, gaining roughly 650m to reach the Gouter Hut at 3,817m. The modern hut, rebuilt in 2013, is a striking egg-shaped structure perched on a rocky spur. You may stop briefly for water, but the summit push continues.\n\nFrom the Gouter Hut, the character of the climb changes completely. You're now on glaciated terrain — a broad, white dome stretching upward. The Dome du Gouter (4,275m) is a long, steady snow plod that tests your cardiovascular fitness. The altitude is tangible: every step requires deliberate effort, and the air feels thin and dry.\n\nPast the Dome, you reach the Vallot emergency shelter at 4,362m — a small, unheated metal box used only in emergencies. The route narrows dramatically here onto the Bosses Ridge (Arete des Bosses), a knife-edge snow arete with breathtaking drops on both sides. This is the crux of the climb — technically straightforward but exposed and demanding at altitude. Your guide leads, kicking steps in the firm morning snow.\n\nAnd then, suddenly, the ridge ends and the ground falls away in every direction. You're standing on the summit of Mont Blanc at 4,808m. On a clear July morning, you can see the Matterhorn, Monte Rosa, Gran Paradiso, and the distant Jura mountains. The sense of achievement is overwhelming.\n\nAfter photos and a moment to absorb the view, you descend the same route back to the Gouter Hut, where you'll spend the night. The descent of the Bosses Ridge requires full concentration — tired legs on exposed terrain demand respect. Total moving time today: 8–10 hours.",
+      "elevation": {
+        "min": 3167,
+        "max": 4808,
+        "profile": [[0,3167],[0.3,3200],[0.6,3300],[1.0,3500],[1.5,3650],[2.0,3817],[2.5,3900],[3.0,4000],[3.5,4100],[4.0,4200],[4.3,4275],[4.8,4362],[5.3,4500],[5.8,4650],[6.2,4750],[6.5,4808],[7.0,4650],[7.5,4500],[8.0,4275],[8.5,4050],[9.0,3817]]
+      },
+      "waypoints": [
+        {
+          "name": "Grand Couloir Crossing",
+          "type": "warning",
+          "km": 0.4,
+          "notes": "CRITICAL: Most dangerous section of the route. Cross quickly and without stopping. Rockfall risk is real — helmets mandatory. Guide times the crossing for maximum safety in pre-dawn cold."
+        },
+        {
+          "name": "Aiguille du Gouter — cable sections",
+          "type": "warning",
+          "km": 1.2,
+          "notes": "Steep rock with fixed cables. Sustained scrambling. Keep three points of contact. Altitude: 3,600–3,800m."
+        },
+        {
+          "name": "Refuge du Gouter (3,817m)",
+          "type": "food",
+          "km": 2.0,
+          "notes": "Modern hut, brief water/rest stop on the way up. This is your accommodation tonight on the descent."
+        },
+        {
+          "name": "Dome du Gouter (4,275m)",
+          "type": "summit",
+          "km": 4.3,
+          "notes": "Broad glaciated dome. Steady pace essential — altitude takes a heavy toll. Wind exposure increases here."
+        },
+        {
+          "name": "Vallot Emergency Shelter (4,362m)",
+          "type": "escape",
+          "km": 4.8,
+          "notes": "Emergency shelter only — not a rest stop. If conditions deteriorate or you feel severe AMS, this is the last bail-out point."
+        },
+        {
+          "name": "Bosses Ridge (Arete des Bosses)",
+          "type": "warning",
+          "km": 5.5,
+          "notes": "Exposed knife-edge snow ridge. Steep drops on both sides. Crampons and short rope with guide. No stopping on the ridge."
+        },
+        {
+          "name": "Mont Blanc Summit (4,808m)",
+          "type": "summit",
+          "km": 6.5,
+          "notes": "The highest point in Western Europe. Average summit time: 15–30 minutes depending on conditions. Temperature around -15 to -20C with wind chill."
+        },
+        {
+          "name": "Return to Refuge du Gouter",
+          "type": "campsite",
+          "km": 9.0,
+          "notes": "Descend same route. Arrive mid-afternoon. Hot meal and well-earned rest. Half-board included."
+        }
+      ],
+      "waterSources": ["Refuge de Tete Rousse (fill before departure)", "Refuge du Gouter (water available)", "Melt snow above 4,000m only with stove"],
+      "escapeRoutes": [
+        {"name": "Vallot emergency shelter", "description": "Unheated metal bivouac at 4,362m. Emergency use only — not for planned stops. Last bail-out before the summit ridge.", "km": 4.8},
+        {"name": "Retreat to Gouter Hut", "description": "Turn back to Gouter Hut from any point on the upper route. Guide makes this call based on weather/fitness.", "km": 2.0}
+      ],
+      "interestingLinks": [
+        {"title": "Mont Blanc summit conditions", "url": "https://www.mountain-forecast.com/peaks/Mont-Blanc/forecasts/4807", "type": "official"},
+        {"title": "Mont Blanc summit via Goûter Route", "url": "https://www.youtube.com/watch?v=yRo5cl0yotA", "type": "youtube"},
+        {"title": "Mont Blanc full route on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/le-nid-d-aigle-mont-blanc", "type": "alltrails"}
+      ],
+      "photos": [
+        {"query": "Grand Couloir Mont Blanc Gouter route", "caption": "The Grand Couloir — the most dangerous section of the Gouter route"},
+        {"query": "Refuge du Gouter modern hut Mont Blanc", "caption": "The modern Gouter Hut (3,817m) rebuilt in 2013"},
+        {"query": "Mont Blanc summit Bosses Ridge sunrise", "caption": "Climbers on the Bosses Ridge approaching the summit at dawn"}
+      ],
+      "weather": {
+        "tempHigh": -5,
+        "tempLow": -20,
+        "precipitation": 15,
+        "wind": "20–50 km/h, gusting 70+ on summit ridge",
+        "conditions": "Clear pre-dawn, cloud build-up through the day. Summit conditions vastly different from valley — expect winter-like cold.",
+        "daylight": "15h 50m",
+        "sunrise": "5:55am",
+        "sunset": "9:45pm",
+        "alerts": [
+          "Acute Mountain Sickness risk above 4,000m — headache, nausea, confusion are warning signs. Descend immediately if symptoms worsen.",
+          "Frostbite risk on exposed skin, especially fingers and face. Keep spare dry gloves accessible.",
+          "Dehydration accelerated at altitude — drink regularly even if not thirsty."
+        ]
+      },
+      "accommodation": {
+        "name": "Refuge du Gouter (3,817m)",
+        "type": "refugio",
+        "notes": "Half-board included. Modern facility rebuilt in 2013 — solar-powered, dormitory bunks, hot meals. Highest staffed hut in France. Sleeping bag liner mandatory."
+      }
+    },
+    {
+      "day": 5,
+      "title": "Descent — Gouter Hut to Nid d'Aigle and Chamonix",
+      "distance": 5.5,
+      "ascent": 0,
+      "descent": 1445,
+      "difficulty": "Moderate",
+      "estimatedHours": 4,
+      "terrain": "Reverse of ascent route: steep rocky descent from Gouter, Grand Couloir crossing, moraine trail to Nid d'Aigle.",
+      "terrainTags": ["steep descent", "rockfall zone", "fixed cables", "moraine", "mountain trail"],
+      "description": "After the intensity of summit day, the final descent feels almost anticlimactic — but don't let your guard down. An early start from the Gouter Hut (around 5:00–6:00am) is important to cross the Grand Couloir before the sun warms the rocks above.\n\nThe descent from the Gouter Hut reverses the route you climbed in the dark. In daylight, you can now appreciate the dramatic setting: the cable-equipped rock slabs, the vertiginous views down to the glacier, and the sheer scale of the mountain you just climbed.\n\nThe Grand Couloir crossing is repeated — same urgency, same discipline. Once safely across, the terrain eases. You descend past the Tete Rousse hut (a brief stop for water is fine) and down the moraine trail toward the Nid d'Aigle. The knees take a beating on this section — trekking poles are your best friends.\n\nAt the Nid d'Aigle, you board the Tramway du Mont Blanc for the gentle ride back down to the valley. The contrast between the stark alpine world above and the green, sunny valley of Saint-Gervais is extraordinary. A transfer back to Chamonix completes the trip.\n\nYour guide meets you for a final debrief and a celebratory meal — included in the package. You've just climbed the highest mountain in the Alps. The rest of the day is yours: a long hot shower, a cold beer on a sunny terrace in Chamonix, and the quiet satisfaction of having stood on the roof of Western Europe.",
+      "elevation": {
+        "min": 2372,
+        "max": 3817,
+        "profile": [[0,3817],[0.5,3650],[1.0,3500],[1.5,3300],[1.8,3200],[2.0,3167],[2.3,3050],[2.6,2950],[2.9,2870],[3.2,2800],[3.5,2740],[3.8,2670],[4.2,2600],[4.6,2520],[5.0,2430],[5.5,2372]]
+      },
+      "waypoints": [
+        {
+          "name": "Refuge du Gouter — departure",
+          "type": "campsite",
+          "km": 0,
+          "notes": "Early departure (5–6am). Breakfast at hut. Pack carefully — tired hands drop gear on steep terrain."
+        },
+        {
+          "name": "Grand Couloir Crossing (descent)",
+          "type": "warning",
+          "km": 1.5,
+          "notes": "Same critical crossing as Day 4. Early morning timing essential. Do NOT linger."
+        },
+        {
+          "name": "Refuge de Tete Rousse",
+          "type": "food",
+          "km": 2.0,
+          "notes": "Brief water/rest stop. Pick up any gear you cached here."
+        },
+        {
+          "name": "Baraque des Rognes",
+          "type": "viewpoint",
+          "km": 3.5,
+          "notes": "Last look back up at the Gouter route. The mountain looks impossibly steep from below."
+        },
+        {
+          "name": "Nid d'Aigle — Tramway Station",
+          "type": "transport",
+          "km": 5.5,
+          "notes": "Board the Tramway du Mont Blanc back to Saint-Gervais. Check return schedule — runs approximately hourly."
+        }
+      ],
+      "waterSources": ["Refuge du Gouter (fill before departure)", "Refuge de Tete Rousse (tap)", "Nid d'Aigle station"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        {"title": "Tramway du Mont Blanc return schedule", "url": "https://www.montblancnaturalresort.com/en/tramway-du-mont-blanc", "type": "official"},
+        {"title": "Mont Blanc Goûter Route — full descent video", "url": "https://www.youtube.com/watch?v=yRo5cl0yotA", "type": "youtube"}
+      ],
+      "photos": [
+        {"query": "Gouter hut descent Mont Blanc cable route", "caption": "The cable-equipped descent from the Gouter Hut in daylight"},
+        {"query": "Nid d'Aigle tramway du Mont Blanc summer", "caption": "The Tramway du Mont Blanc — your ride back to the valley"}
+      ],
+      "weather": {
+        "tempHigh": 12,
+        "tempLow": -2,
+        "precipitation": 20,
+        "wind": "10–20 km/h",
+        "conditions": "Clear early morning, warming through the day as you descend. Significantly warmer at Nid d'Aigle than at the hut.",
+        "daylight": "15h 50m",
+        "sunrise": "5:55am",
+        "sunset": "9:45pm",
+        "alerts": []
+      },
+      "accommodation": {
+        "name": "Hotel / apartment in Chamonix",
+        "type": "hotel",
+        "notes": "Back to your valley accommodation. You've earned it. Celebratory meal with guide included in the package."
+      }
+    }
+  ],
+  "preparation": {
+    "fitnessLevel": "You should be comfortable with sustained uphill effort for 8–10 hours at a time, carrying a 8–10kg pack. Prior experience with crampons and roped travel is mandatory — the Compagnie des Guides requires a minimum of two days' prior mountaineering experience. Cardiovascular fitness is more important than raw strength: the summit day involves nearly 1,900m of ascent at altitude where oxygen levels are roughly 55% of sea level.",
+    "trainingWeeks": 12,
+    "schedule": [
+      {
+        "weeks": "1–3",
+        "focus": "Aerobic Base Building",
+        "description": "4–5 sessions per week of sustained aerobic activity: running, cycling, or hiking. Build to 60–90 minutes continuous effort at conversational pace. Include one long weekend hike (3–4 hours) with a light pack."
+      },
+      {
+        "weeks": "4–6",
+        "focus": "Vertical Gain & Pack Weight",
+        "description": "Add elevation to every session. Stair climbing, hill repeats, or inclined treadmill with 8–10kg pack. Weekend hikes should now include 800–1,000m of ascent. Target two hikes per weekend if possible."
+      },
+      {
+        "weeks": "7–9",
+        "focus": "High-Intensity & Back-to-Back Days",
+        "description": "Introduce interval training midweek (hill sprints, tempo runs). Do consecutive long days on weekends — 6+ hour hikes on Saturday and Sunday to simulate the demands of summit day followed by descent. Include some pre-dawn starts."
+      },
+      {
+        "weeks": "10–11",
+        "focus": "Peak Volume & Technical Prep",
+        "description": "Longest week: aim for a 10+ hour day in the mountains if possible. Practice crampon walking if you have access to snow or an indoor wall. Get comfortable moving in a harness. This is also the time for a mountaineering course if you haven't used crampons before."
+      },
+      {
+        "weeks": "12",
+        "focus": "Taper & Final Prep",
+        "description": "Reduce volume by 40%. Light hikes and easy cardio only. Focus on sleep, nutrition, and hydration. Test all gear — especially boots, which must be fully broken in. Pack and repack your summit bag until you can find everything by feel."
+      }
+    ],
+    "physicalDemands": "Summit day is the crux: 1,900m of ascent over 9km at altitudes between 3,167m and 4,808m, where oxygen levels drop to 55% of sea level. You'll be moving for 8–10 hours, much of it in darkness or semi-darkness. The Grand Couloir requires quick, decisive movement on steep terrain. The Bosses Ridge demands steady balance on an exposed snow arete at 4,700m. Cold is a constant companion — temperatures can reach -20C on the summit with wind chill. Dehydration and calorie deficit compound the altitude effects. Your legs will be exhausted from summit day when you face the full descent on Day 5. This is a serious undertaking — respect it.",
+    "recommendedTraining": [
+      "Focus on sustained uphill cardio — stair climbing machines are ideal if you don't have hills nearby",
+      "Train with your actual pack weight (8–10kg) on weekend hikes from week 4 onward",
+      "Include at least two pre-dawn starts in your training to simulate summit day fatigue",
+      "Practice walking in crampons on any available ice or hard snow — even indoor climbing walls offer crampon courses",
+      "Add core stability and balance work (yoga, single-leg exercises) for the Bosses Ridge",
+      "Simulate altitude effects by doing intervals while breathing through a straw (sounds odd, works)",
+      "Test every piece of gear on a training day — never bring untested kit to the mountain"
+    ],
+    "whatToExpect": [
+      {"day": 1, "description": "Moderate effort with sustained climbing. You'll feel warmed up and energised. The scrambling sections test your comfort with exposure. Expect tired legs by late afternoon — this is a full alpine day."},
+      {"day": 2, "description": "Shorter but higher. The cable car does the heavy lifting, but you'll notice the altitude at 3,600m+. Breathing is harder, movements feel more effortful. Some mild headache is normal. The key learning is crampon technique on real glacier terrain."},
+      {"day": 3, "description": "The easiest physical day — only 3.5km and 800m ascent. But the altitude makes even this feel significant. Appetite may decrease at the hut. Sleep will be restless. This is normal acclimatization — trust the process."},
+      {"day": 4, "description": "The hardest day of your life. You start exhausted (2am wake-up after poor sleep at altitude) and climb for 8–10 hours. The Grand Couloir is terrifying but brief. Above 4,000m every step is an effort. The summit euphoria is real. The descent is gruelling on tired legs. Expect to feel completely emptied."},
+      {"day": 5, "description": "Sore legs, tired body, but spirits are high. The descent is straightforward but long — knees take a beating. The Grand Couloir crossing requires one last burst of focus. Once you hit the tramway, it's pure relief."}
+    ]
+  },
+  "gear": [
+    {
+      "category": "Mountaineering Equipment",
+      "items": [
+        { "name": "Mountaineering boots (B2 or B3 rated)", "essential": true, "notes": "Must be crampon-compatible with rigid soles. Well-insulated for high altitude. Must be thoroughly broken in — not new." },
+        { "name": "Crampons (12-point steel)", "essential": true, "notes": "With anti-balling plates. Must fit your boots perfectly. Can rent from Chamonix shops if needed." },
+        { "name": "Ice axe (55–70cm)", "essential": true, "notes": "Walking-length axe. Can rent in Chamonix." },
+        { "name": "Climbing harness", "essential": true, "notes": "Lightweight mountaineering model. Must be comfortable over multiple layers." },
+        { "name": "Mountaineering helmet", "essential": true, "notes": "Non-negotiable for the Grand Couloir. Lightweight models preferred." },
+        { "name": "2x locking carabiners + sling", "essential": true, "notes": "For clipping into fixed cables and guide's rope." },
+        { "name": "Trekking poles (collapsible)", "essential": true, "notes": "Essential for the approach and descent. Stow on pack for technical sections." },
+        { "name": "Backpack 35–45L", "essential": true, "notes": "With ice axe attachment. Rain cover included. Must carry all personal gear for 2 hut nights." }
+      ]
+    },
+    {
+      "category": "Clothing — Upper Body",
+      "items": [
+        { "name": "Base layer tops x2 (merino wool)", "essential": true, "notes": "Long-sleeve, moisture-wicking. Merino regulates temperature and resists odour." },
+        { "name": "Mid-layer fleece or softshell", "essential": true, "notes": "Primary insulation layer for moving. Wind-resistant preferred." },
+        { "name": "Insulated jacket (down or synthetic)", "essential": true, "notes": "For summit and rest stops. Synthetic dries faster if wet. 700+ fill down is lighter." },
+        { "name": "Hardshell waterproof jacket (Gore-Tex)", "essential": true, "notes": "Wind and waterproof outer layer. Must fit over all other layers. Hood must fit over helmet." },
+        { "name": "Lightweight softshell jacket", "essential": false, "notes": "Versatile wind protection for acclimatization days." }
+      ]
+    },
+    {
+      "category": "Clothing — Lower Body",
+      "items": [
+        { "name": "Base layer bottoms (merino)", "essential": true, "notes": "Worn under softshell trousers on summit day." },
+        { "name": "Softshell mountaineering trousers", "essential": true, "notes": "Wind-resistant, quick-dry. Must fit over crampons at ankle." },
+        { "name": "Waterproof over-trousers", "essential": true, "notes": "Side-zip preferred for putting on over boots and crampons." },
+        { "name": "Hiking shorts or zip-off trousers", "essential": false, "notes": "For acclimatization days and the approach to Nid d'Aigle." }
+      ]
+    },
+    {
+      "category": "Extremities",
+      "items": [
+        { "name": "Thin liner gloves", "essential": true, "notes": "For dexterity when handling gear. Grippy palms essential." },
+        { "name": "Insulated mountaineering gloves", "essential": true, "notes": "Waterproof, warm. For summit day. Carry spare pair in pack." },
+        { "name": "Warm beanie / balaclava", "essential": true, "notes": "Must cover ears. Balaclava ideal for summit ridge wind." },
+        { "name": "Sun hat / cap", "essential": true, "notes": "UV is intense at altitude. Wide brim preferred." },
+        { "name": "Buff / neck gaiter", "essential": true, "notes": "Multi-use: sun protection, wind protection, warmth." },
+        { "name": "Mountaineering socks x3 pairs", "essential": true, "notes": "Medium-weight merino. One fresh pair per hut night." },
+        { "name": "Gaiters", "essential": true, "notes": "Keep snow out of boots on glacier terrain. Essential for summit day." },
+        { "name": "Category 4 glacier sunglasses", "essential": true, "notes": "Must be Cat 4 for high-altitude snow. Glacier blindness is a real risk." },
+        { "name": "Ski goggles", "essential": false, "notes": "For poor visibility or high wind on summit ridge. Useful backup." }
+      ]
+    },
+    {
+      "category": "Camping & Hut Essentials",
+      "items": [
+        { "name": "Sleeping bag liner (silk or cotton)", "essential": true, "notes": "Mandatory at both huts. Blankets provided but a liner is required for hygiene." },
+        { "name": "Headlamp + spare batteries", "essential": true, "notes": "Summit day starts at 2–3am in complete darkness. Minimum 200 lumens." },
+        { "name": "Water bottles (2L total)", "essential": true, "notes": "Wide-mouth preferred — easier to fill with gloves. Insulated cover prevents freezing." },
+        { "name": "Thermos flask (0.5L)", "essential": false, "notes": "Hot tea on summit day is a huge morale boost. Fill at hut before departure." },
+        { "name": "Earplugs", "essential": true, "notes": "Hut dormitories are noisy. Sleep is critical before summit day." },
+        { "name": "Energy bars and trail snacks", "essential": true, "notes": "High-calorie, easy to eat with gloves. Budget 500–800 calories for summit day snacking." }
+      ]
+    },
+    {
+      "category": "Health & Safety",
+      "items": [
+        { "name": "Sunscreen SPF 50+", "essential": true, "notes": "Apply every 2 hours. UV radiation is 50% stronger at 4,000m than sea level." },
+        { "name": "Lip balm with SPF", "essential": true, "notes": "Lips burn fast at altitude. Reapply frequently." },
+        { "name": "First aid kit", "essential": true, "notes": "Blister kit (Compeed), ibuprofen, paracetamol, tape, antiseptic wipes." },
+        { "name": "Personal medications", "essential": true, "notes": "Bring enough for the full trip plus spare days. Consider Diamox (acetazolamide) — consult your doctor." },
+        { "name": "Quick-dry towel (small)", "essential": false, "notes": "For hut stays. Microfiber packs down to nothing." }
+      ]
+    },
+    {
+      "category": "Documents & Tech",
+      "items": [
+        { "name": "Passport / EU ID", "essential": true, "notes": "Required for hut registration." },
+        { "name": "Hut reservation confirmations (printed)", "essential": true, "notes": "Mandatory. Quota system in effect — no reservation, no climb. Print paper copies." },
+        { "name": "European Health Insurance Card (EHIC/GHIC)", "essential": true, "notes": "Or equivalent travel/health insurance. Must cover helicopter evacuation." },
+        { "name": "Travel insurance documents", "essential": true, "notes": "Must explicitly cover mountaineering above 4,000m. Many standard policies exclude this." },
+        { "name": "Cash (euros)", "essential": true, "notes": "Huts accept cash only for extras (drinks, snacks). Budget 25–35 EUR per day." },
+        { "name": "Phone + power bank", "essential": true, "notes": "Charging limited at huts. 10,000mAh power bank sufficient. Download offline maps (IGN Top 25)." },
+        { "name": "Offline maps (IGN 3531ET)", "essential": true, "notes": "IGN Top 25 map 3531ET covers the entire Gouter route. Download to phone and/or carry paper copy." }
+      ]
+    }
+  ],
+  "generalInfo": {
+    "gettingThere": "Chamonix-Mont-Blanc is in the Haute-Savoie department of southeastern France, at the foot of Mont Blanc.\n\n**By air:** The nearest airport is Geneva (GVA), 88km / 1h15 drive. Direct shuttle buses run from Geneva airport to Chamonix multiple times daily (Alpybus, MountainDropoffs — book in advance, approx 35 EUR one way). Lyon Saint-Exupery (LYS) is 220km / 2h30 and is an alternative with cheaper flights.\n\n**By train:** TGV high-speed trains run from Paris Gare de Lyon to Saint-Gervais-les-Bains-Le Fayet (5h30), from where a local SNCF train continues to Chamonix (40min). Direct night trains are also available seasonally.\n\n**By car:** From Geneva, take the A40 autoroute through the Arve valley. From Italy, the Mont Blanc Tunnel connects Courmayeur to Chamonix (toll: approx 50 EUR one way).\n\n**Getting to the climb:** On Day 3, you'll need to reach Les Houches or Saint-Gervais for the Bellevue cable car and Tramway du Mont Blanc. Your guide will coordinate transport — it's typically a 15–20min drive from Chamonix centre. Lift passes for the Tramway are included in the Duo package.",
+    "permits": "Since 2019, climbing Mont Blanc via the Gouter route requires a confirmed reservation at one of the mountain huts (Tete Rousse and/or Gouter). A daily quota of 214 climbers is enforced. You must present your hut booking confirmation to authorities before starting the ascent.\n\nFor the Duo package, the Compagnie des Guides handles all hut bookings as part of the 2,580 EUR per person fee. However, verify this with them when booking — popular July dates sell out months in advance. The hut booking system opens in spring via the FFCAM (French Alpine Club) website: montblanc.ffcam.fr\n\nNo separate climbing permit is required beyond the hut reservations. There is no park entrance fee for the Mont Blanc massif itself.",
+    "emergency": "**Mountain Rescue (PGHM Chamonix):** +33 (0)4 50 53 16 89\n**European Emergency Number:** 112 (works from any mobile)\n**SAMU (ambulance):** 15\n**Fire Brigade (Pompiers):** 18\n**Police:** 17\n\n**Chamonix Hospital:** 509 Route des Pelerins, 74400 Chamonix. Phone: +33 (0)4 50 53 84 00. Open for trauma and emergencies during summer season.\n**Sallanches Hospital (24/7):** 380 Rue de l'Hopital, 74700 Sallanches. Phone: +33 (0)4 50 47 30 30. Full emergency department, 25 minutes from Chamonix.\n\n**On the mountain:** Mobile phone coverage is intermittent above 3,000m. The Gouter Hut has a radio link to the valley. Your guide carries emergency communication equipment. Helicopter rescue is standard in the Mont Blanc massif — response time is typically under 30 minutes in good weather.\n\n**La Chamoniarde:** The Chamonix mountain safety office at Place du Mont Blanc provides daily route condition updates and weather forecasts. Visit before your climb: chamoniarde.com",
+    "currency": "France uses the Euro (EUR). ATMs are widely available in Chamonix town centre. Credit cards accepted at most shops, restaurants, and cable car stations. Mountain huts generally accept cash only for extras — bring 50–100 EUR in small notes for the hut nights. Tipping is not mandatory in France but rounding up is appreciated. Guide gratuity: 50–100 EUR per person is customary for a successful summit.",
+    "language": "French is the official language. Chamonix is extremely international — English is widely spoken in hotels, restaurants, and outdoor shops. Your UIAGM guide will speak English. Useful French phrases for the mountain: 'Bonjour' (hello), 'Merci' (thank you), 'Ca va?' (how are you?), 'J'ai mal a la tete' (I have a headache — important for altitude!), 'Au secours' (help).",
+    "mobileCoverage": "Good 4G coverage in Chamonix valley and at the Aiguille du Midi cable car station. Intermittent signal at Nid d'Aigle and Tete Rousse hut (depends on carrier — Orange/SFR best). No reliable signal above Gouter Hut or on the summit. The Gouter Hut has a radio link to the valley for emergencies. WiFi is available at most Chamonix hotels. Download all offline maps before leaving the valley.",
+    "healthInsurance": "Standard travel insurance usually EXCLUDES mountaineering above 3,000–4,000m. You MUST have a policy that explicitly covers: alpine mountaineering to 5,000m, helicopter evacuation (PGHM rescue costs are billed to climbers), and search and rescue. Recommended options: Austrian Alpine Club (AAC/OeAV) membership (approx 65 EUR/year, includes Alps-wide rescue insurance), BMC travel insurance (UK), or Global Rescue. Carry a printed copy of your policy and emergency contact number. The European Health Insurance Card (EHIC/GHIC) covers public hospital treatment in France but NOT rescue helicopter costs.",
+    "visaInfo": "France is part of the Schengen Area. EU/EEA citizens need only a valid ID card or passport. UK, US, Canadian, Australian, and most other Western nationals can enter visa-free for up to 90 days. Check current requirements at france-visas.gouv.fr. No special mountaineering permit or visa is required. Passport must be valid for at least 3 months beyond your travel dates.",
+    "emergencyContacts": [
+      {"service": "PGHM Mountain Rescue (Chamonix)", "number": "+33 (0)4 50 53 16 89", "notes": "24/7 — dedicated mountain rescue. Speak French or English."},
+      {"service": "European Emergency", "number": "112", "notes": "Works from any mobile phone, even without SIM"},
+      {"service": "SAMU (Ambulance)", "number": "15", "notes": "Medical emergency from French phones"},
+      {"service": "Pompiers (Fire Brigade)", "number": "18", "notes": "Also handles medical emergencies"},
+      {"service": "Chamonix Hospital", "number": "+33 (0)4 50 53 84 00", "notes": "509 Route des Pelerins. Summer trauma unit."},
+      {"service": "Sallanches Hospital (24/7)", "number": "+33 (0)4 50 47 30 30", "notes": "Full emergency dept, 25min from Chamonix"},
+      {"service": "La Chamoniarde (mountain safety)", "number": "+33 (0)4 50 53 22 08", "notes": "Daily route conditions and weather forecasts"}
+    ],
+    "usefulApps": [
+      {"name": "IGN Rando", "description": "Official French topographic maps (IGN). Download map 3531ET for the Gouter route. Works offline."},
+      {"name": "Chamonix Weather (by Meteo France)", "description": "Hyper-local mountain weather forecasts for the Chamonix valley and altitude zones."},
+      {"name": "PeakFinder", "description": "Augmented reality app identifying surrounding peaks from any viewpoint. Perfect for the summit."},
+      {"name": "Mountain Hub", "description": "Real-time route conditions posted by other climbers. Check Grand Couloir rockfall reports."},
+      {"name": "SityTrail (or ViewRanger)", "description": "GPS tracking with topo maps. Record your ascent with elevation profile."},
+      {"name": "Refuges.info", "description": "Mountain hut information, booking links, and reviews for all Alpine refuges."}
+    ],
+    "additionalNotes": "The Compagnie des Guides de Chamonix office is at 190 Place de l'Eglise, 74400 Chamonix-Mont-Blanc. Phone: +33 (0)4 50 53 00 88. Office hours: 8:30am–12:00pm and 2:30pm–7:00pm daily in summer.\n\nEquipment rental is available from multiple shops in Chamonix. Snell Sports (Rue du Docteur Paccard), Ravanel & Co (Place de l'Eglise), and Cham'Sport (Rue Joseph Vallot) all offer Mont Blanc-specific rental packages including boots, crampons, ice axe, harness, and helmet for approximately 80–120 EUR for 3 days.\n\nThe Duo package costs 2,580 EUR per person (2026 pricing — verify when booking). This includes: UIAGM guide for 5 days (1:2 ratio), 2 hut nights with half-board, daily water ration at huts, lift passes, and a post-climb meal. NOT included: valley accommodation (Days 1–2), lunches/snacks, personal equipment, transport to/from Chamonix.",
+    "tips": [
+      "Book the Duo package directly with the Compagnie des Guides de Chamonix as early as possible — July dates fill up by March/April. Email: info@chamonix-guides.com",
+      "Rent technical gear (crampons, ice axe, harness, helmet) in Chamonix rather than flying with it. Snell Sports, Ravanel & Co, and Cham'Sport all have rental programmes for Mont Blanc climbers.",
+      "Arrive in Chamonix 2–3 days before the programme starts to adjust to the altitude (1,035m) and time zone. Use this time for easy valley hikes and to visit La Chamoniarde for condition reports.",
+      "The Aiguille du Midi cable car sells out in July — book your Day 2 tickets online in advance at montblancnaturalresort.com",
+      "Sleeping at altitude is the hardest part for many people. Bring earplugs, a sleeping bag liner, and consider taking ibuprofen before bed to reduce altitude headaches.",
+      "The Grand Couloir crossing is psychologically intimidating but physically brief (10–15 minutes). Trust your guide's timing and move steadily without rushing.",
+      "Hut meals are substantial but you'll burn 4,000–6,000 calories on summit day. Bring high-energy snacks you know you can eat when exhausted: gels, dried fruit, chocolate, salted nuts.",
+      "Consider travel insurance that specifically covers mountaineering above 4,000m and helicopter rescue. Standard travel policies often exclude this. Austrian Alpine Club (AAC) membership is an affordable option that includes rescue insurance Alps-wide."
+    ]
+  }
+}
