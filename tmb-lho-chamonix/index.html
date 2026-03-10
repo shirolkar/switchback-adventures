@@ -1,1 +1,2292 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   CSS CUSTOM PROPERTIES
+   ================================================================ */
+:root {
+  --bg: #FFFFFF;
+  --bg-card: #F7F7F5;
+  --bg-nav: #1A1A1A;
+  --bg-section-alt: #F0EFEC;
+  --text: #1A1A1A;
+  --text-muted: #6E6E6E;
+  --text-nav: #A0A0A0;
+  --accent: #1A6B5C;
+  --accent-light: #e6f2ef;
+  --accent-warm: #C85A3A;
+  --accent-warm-light: #fef0eb;
+  --accent-red: #C4572A;
+  --accent-red-light: #fdeae5;
+  --border: #E5E5E2;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.06);
+  --radius: 8px;
+  --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #111816;
+  --bg-card: #1A201C;
+  --bg-nav: #0C0F0D;
+  --bg-section-alt: #151B18;
+  --text: #E8E2D4;
+  --text-muted: #7A7A6E;
+  --text-nav: #6E6E6E;
+  --accent: #2D9B84;
+  --accent-light: #162420;
+  --accent-warm: #D4764A;
+  --accent-warm-light: #2a1f18;
+  --accent-red: #D4756A;
+  --accent-red-light: #2a1818;
+  --border: #2A302C;
+  --shadow: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* ================================================================
+   RESET & BASE
+   ================================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 120px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+/* ================================================================
+   TOP NAV BAR
+   ================================================================ */
+.top-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg-nav);
+  padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
+.nav-brand {
+  font-family: var(--font-display);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-controls {
+  display: flex; gap: 8px; align-items: center;
+}
+
+.toggle-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-nav);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+}
+.toggle-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+/* ================================================================
+   TAB BAR (sticky below top nav)
+   ================================================================ */
+.tab-bar {
+  position: sticky; top: 56px; z-index: 99;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 0 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  transition: background 0.3s var(--ease);
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 14px 18px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s var(--ease);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ================================================================
+   HERO
+   ================================================================ */
+.hero {
+  padding: 72px 24px 56px;
+  text-align: center;
+  background: #1A1A1A;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 120%, rgba(26,107,92,0.15) 0%, transparent 60%);
+}
+.hero-subtitle {
+  color: var(--accent-warm);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 8px;
+  position: relative;
+  line-height: 1.2;
+}
+.hero-dates {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.92rem;
+  margin-bottom: 32px;
+  position: relative;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+.hero-stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 4px;
+}
+
+/* ================================================================
+   CONTENT CONTAINER
+   ================================================================ */
+.content { max-width: 940px; margin: 0 auto; padding: 0 20px 80px; }
+
+/* Tab panels */
+.tab-panel { display: none; padding-top: 32px; }
+.tab-panel.active { display: block; }
+
+/* Animate sections in */
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+  border-bottom: none;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ================================================================
+   CARDS
+   ================================================================ */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.3s var(--ease), transform 0.2s var(--ease);
+}
+.card:hover { box-shadow: var(--shadow-lg); }
+
+/* ================================================================
+   STATS GRID
+   ================================================================ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.stat-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 10px;
+  text-align: center;
+}
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stat-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ================================================================
+   HIGHLIGHTS
+   ================================================================ */
+.highlights {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 20px;
+}
+.highlight-tag {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+[data-theme="dark"] .highlight-tag {
+  background: var(--bg-card);
+}
+
+/* ================================================================
+   ACCOMMODATIONS LIST
+   ================================================================ */
+.accom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.accom-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.accom-item:last-child { border-bottom: none; }
+.accom-day-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accom-info {
+  flex: 1;
+  min-width: 0;
+}
+.accom-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.accom-location {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.accom-route-label {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: right;
+  max-width: 200px;
+  align-self: center;
+}
+
+/* ================================================================
+   OVERVIEW TWO-COLUMN LAYOUT
+   ================================================================ */
+.overview-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+.overview-col-title {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+}
+
+/* ================================================================
+   ROUTE OVERVIEW
+   ================================================================ */
+.route-overview-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.route-overview-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.route-overview-item:last-child { border-bottom: none; }
+.route-day-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.route-day-info {
+  flex: 1;
+  min-width: 0;
+}
+.route-day-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.route-day-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.route-day-meta span { white-space: nowrap; }
+.route-day-difficulty {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 0;
+  align-self: center;
+}
+.route-day-difficulty.easy { color: #27ae60; }
+.route-day-difficulty.moderate { color: var(--accent-warm); }
+.route-day-difficulty.challenging { color: #e67e22; }
+.route-day-difficulty.very-challenging { color: var(--accent-red); }
+
+/* ================================================================
+   DAY CARDS
+   ================================================================ */
+.day-card { position: relative; cursor: default; }
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+.day-badge {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.day-badge.easy { background: #27ae60; }
+.day-badge.moderate { background: var(--accent-warm); }
+.day-badge.challenging { background: #e67e22; }
+.day-badge.very-challenging { background: var(--accent-red); }
+
+.day-title-group { flex: 1; }
+.day-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.day-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 2px;
+}
+.difficulty-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.difficulty-pill.easy { background: #e8f5e9; color: #27ae60; }
+.difficulty-pill.moderate { background: var(--accent-warm-light); color: var(--accent-warm); }
+.difficulty-pill.challenging { background: #fef3e8; color: #e67e22; }
+.difficulty-pill.very-challenging { background: var(--accent-red-light); color: var(--accent-red); }
+
+[data-theme="dark"] .difficulty-pill.easy { background: #162820; }
+[data-theme="dark"] .difficulty-pill.moderate { background: #2a2018; }
+[data-theme="dark"] .difficulty-pill.challenging { background: #2a2018; }
+
+/* Quick stats row */
+.day-quick-stats {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  padding: 12px 0;
+  margin: 8px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.84rem;
+}
+.day-qs {
+  display: flex; align-items: center; gap: 5px;
+  color: var(--text-muted);
+}
+.day-qs strong { color: var(--text); font-weight: 700; }
+.day-qs .qs-icon { font-size: 1rem; width: 18px; text-align: center; }
+
+/* Terrain tags */
+.terrain-tags {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin: 12px 0;
+}
+.terrain-tag {
+  background: var(--bg-section-alt);
+  border: 1px solid var(--border);
+  padding: 3px 12px;
+  border-radius: 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Deep Dive toggle */
+.deep-dive-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent-light);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.84rem;
+  font-weight: 700;
+  transition: all 0.2s var(--ease);
+  margin-top: 12px;
+}
+.deep-dive-btn:hover { background: var(--accent); color: #fff; }
+.deep-dive-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s var(--ease);
+  font-size: 0.7rem;
+}
+.deep-dive-btn.open .arrow { transform: rotate(180deg); }
+
+/* Deep dive content */
+.deep-dive {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s var(--ease);
+}
+.deep-dive.open {
+  max-height: 8000px;
+}
+.deep-dive-inner {
+  padding-top: 20px;
+}
+
+/* ================================================================
+   ELEVATION CHART
+   ================================================================ */
+.elevation-chart {
+  background: var(--bg-section-alt);
+  border-radius: 10px;
+  padding: 20px 16px 12px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.elevation-chart svg {
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+.elev-grid-line {
+  stroke: var(--border);
+  stroke-width: 0.5;
+  stroke-dasharray: 4 4;
+}
+.elev-path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.elev-area {
+  opacity: 0.06;
+}
+[data-theme="dark"] .elev-area {
+  opacity: 0.10;
+}
+.elev-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 600;
+}
+.elev-summit-dot {
+  fill: var(--accent-warm);
+  stroke: #fff;
+  stroke-width: 2;
+}
+.elev-summit-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  fill: var(--accent-warm);
+}
+
+/* Tooltip */
+.elev-tooltip {
+  position: absolute;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  box-shadow: var(--shadow-lg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s var(--ease);
+  z-index: 10;
+  white-space: nowrap;
+}
+.elev-tooltip.visible { opacity: 1; }
+.elev-tooltip-dist { font-weight: 700; color: var(--accent); }
+.elev-tooltip-elev { color: var(--text-muted); margin-left: 8px; }
+
+/* Hover line */
+.elev-hover-line {
+  stroke: var(--accent-warm);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.elev-hover-dot {
+  fill: var(--accent-warm);
+  stroke: #fff;
+  stroke-width: 2;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+/* ================================================================
+   WAYPOINTS
+   ================================================================ */
+.waypoints { margin-bottom: 20px; }
+.waypoints-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.waypoint {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+.waypoint:last-child { border-bottom: none; }
+.wp-icon {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  color: #fff;
+}
+.wp-water { background: #3b82c8; }
+.wp-viewpoint { background: var(--accent); }
+.wp-warning { background: var(--accent-red); }
+.wp-food { background: var(--accent-warm); }
+.wp-transport { background: #7c6fa0; }
+.wp-escape { background: #6b8a7a; }
+.wp-toilet { background: #8a8672; }
+.wp-campsite { background: #5a8a3a; }
+.wp-summit { background: #c89b5e; }
+.wp-bridge { background: #6a8ab5; }
+.wp-km {
+  color: var(--text-muted);
+  min-width: 58px;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.wp-info { flex: 1; }
+.wp-name { font-weight: 700; }
+.wp-notes { color: var(--text-muted); font-size: 0.82rem; margin-top: 2px; }
+
+/* ================================================================
+   ACCOMMODATION BADGE
+   ================================================================ */
+.accom-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--bg-section-alt);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+  margin-top: 16px;
+}
+.accom-type-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ================================================================
+   ESCAPE ROUTES
+   ================================================================ */
+.escape-routes { margin: 16px 0; }
+.escape-route {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 12px;
+  background: var(--accent-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+.escape-route-icon { font-size: 1rem; flex-shrink: 0; }
+.escape-route-name { font-weight: 700; }
+.escape-route-desc { color: var(--text-muted); font-size: 0.82rem; }
+
+/* ================================================================
+   INTERESTING LINKS
+   ================================================================ */
+.day-links {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 16px;
+}
+.day-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--bg-section-alt);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s var(--ease);
+}
+.day-link:hover { background: var(--accent); color: #fff; }
+
+/* ================================================================
+   PHOTOS (Wikimedia)
+   ================================================================ */
+.photo-grid {
+  display: flex; gap: 10px; overflow-x: auto;
+  padding: 4px 0 12px;
+  scrollbar-width: none;
+  margin-top: 16px;
+}
+.photo-grid::-webkit-scrollbar { display: none; }
+.photo-thumb {
+  width: 180px; height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease);
+  background: var(--bg-section-alt);
+}
+.photo-thumb:hover { transform: scale(1.04); }
+
+/* Skeleton loader */
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-section-alt) 25%, var(--border) 50%, var(--bg-section-alt) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ================================================================
+   LIGHTBOX
+   ================================================================ */
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.lightbox.open { display: flex; opacity: 1; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px; right: 24px;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.3); }
+.lightbox-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  text-align: center;
+  max-width: 80vw;
+}
+
+/* ================================================================
+   WEATHER TAB
+   ================================================================ */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.weather-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.weather-card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+.weather-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 5px 0;
+  font-size: 0.84rem;
+}
+.weather-row .label { color: var(--text-muted); }
+.weather-row strong { font-weight: 700; }
+
+/* Temperature bar */
+.temp-bar-container {
+  margin: 8px 0 4px;
+  height: 8px;
+  background: var(--bg-section-alt);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.temp-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3b82c8, #e67e22, #c0392b);
+}
+.temp-labels {
+  display: flex; justify-content: space-between;
+  font-size: 0.78rem; margin-top: 2px;
+}
+.temp-low { color: #3b82c8; font-weight: 700; }
+.temp-high { color: #c0392b; font-weight: 700; }
+
+/* Precipitation visual */
+.precip-visual {
+  display: flex; gap: 3px; align-items: flex-end;
+  height: 30px; margin: 8px 0;
+}
+.precip-drop {
+  width: 8px;
+  border-radius: 4px 4px 2px 2px;
+  background: #3b82c8;
+  transition: height 0.4s var(--ease);
+}
+.precip-drop.empty { background: var(--bg-section-alt); }
+.precip-value {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-left: 12px;
+}
+
+/* Weather alert */
+.weather-alert {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--accent-red-light);
+  border-left: 3px solid var(--accent-red);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--accent-red);
+}
+
+/* ================================================================
+   PREPARATION TAB
+   ================================================================ */
+.training-timeline {
+  position: relative;
+  padding-left: 28px;
+}
+.training-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: var(--border);
+}
+.training-phase {
+  position: relative;
+  padding: 0 0 28px 20px;
+}
+.training-phase:last-child { padding-bottom: 0; }
+.training-phase::before {
+  content: '';
+  position: absolute;
+  left: -25px; top: 6px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+}
+.training-weeks {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+}
+.training-focus {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 3px 0;
+}
+.training-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* What to expect */
+.expect-card {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.expect-card:last-child { border-bottom: none; }
+.expect-day-badge {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: var(--accent-light);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.expect-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+/* ================================================================
+   GEAR TAB
+   ================================================================ */
+.gear-progress {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 24px;
+}
+.gear-progress-bar {
+  flex: 1; height: 10px;
+  background: var(--bg-section-alt);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gear-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #27ae60);
+  border-radius: 5px;
+  transition: width 0.4s var(--ease);
+}
+.gear-progress-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.gear-clear-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.2s var(--ease);
+}
+.gear-clear-btn:hover { background: var(--accent-red-light); color: var(--accent-red); border-color: var(--accent-red); }
+
+.gear-category {
+  margin-bottom: 8px;
+}
+.gear-cat-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--border);
+}
+.gear-cat-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.gear-cat-arrow {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: transform 0.3s var(--ease);
+}
+.gear-cat-header.collapsed .gear-cat-arrow { transform: rotate(-90deg); }
+.gear-cat-items { overflow: hidden; transition: max-height 0.3s var(--ease); }
+.gear-cat-items.collapsed { max-height: 0 !important; }
+
+.gear-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.15s;
+}
+.gear-item:last-child { border-bottom: none; }
+.gear-item:hover { opacity: 0.85; }
+
+.gear-check {
+  width: 24px; height: 24px;
+  border-radius: 7px;
+  border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s var(--ease);
+  font-size: 0.7rem;
+  color: transparent;
+}
+.gear-item.checked .gear-check {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.gear-item.checked .gear-name { text-decoration: line-through; color: var(--text-muted); }
+
+.gear-name { flex: 1; font-weight: 500; }
+.gear-essential {
+  color: var(--accent-warm);
+  font-size: 1rem;
+  flex-shrink: 0;
+  title: "Essential item";
+}
+.gear-notes {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  max-width: 260px;
+}
+
+/* ================================================================
+   GENERAL INFO TAB
+   ================================================================ */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.info-card.full-width {
+  grid-column: 1 / -1;
+}
+.info-card-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--accent);
+  display: flex; align-items: center; gap: 8px;
+}
+.info-card-icon {
+  font-size: 1.1rem;
+}
+.info-card p, .info-card li, .info-card-body {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.info-card-body strong {
+  color: var(--text);
+  font-weight: 700;
+}
+.info-card ul {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+.info-card li { margin-bottom: 6px; }
+
+/* Emergency contacts table */
+.emergency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.emergency-table th {
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: var(--bg-section-alt);
+  font-weight: 700;
+}
+.emergency-table td {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+.emergency-table tr:last-child td { border-bottom: none; }
+
+/* Useful apps */
+.app-item {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.app-item:last-child { border-bottom: none; }
+.app-name { font-weight: 700; font-size: 0.88rem; }
+.app-desc { font-size: 0.82rem; color: var(--text-muted); }
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+
+/* ================================================================
+   LOADING & ERROR
+   ================================================================ */
+.loading {
+  text-align: center;
+  padding: 120px 24px;
+  color: var(--text-muted);
+}
+.loading-spinner {
+  width: 40px; height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error-msg {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--accent-red);
+}
+
+/* ================================================================
+   MOBILE NAV
+   ================================================================ */
+.mobile-nav {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--bg-nav);
+  z-index: 100;
+  padding: 6px 0;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.2);
+}
+.mobile-nav-inner {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mobile-nav-btn {
+  background: none; border: none;
+  color: var(--text-nav);
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-align: center;
+  padding: 4px 6px;
+  border-radius: 6px;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.mobile-nav-btn .m-icon { font-size: 1.1rem; }
+.mobile-nav-btn:hover, .mobile-nav-btn.active { color: #fff; }
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 700px) {
+  .top-nav { padding: 0 12px; }
+  .tab-bar { display: none; }
+  .mobile-nav { display: block; }
+  body { padding-bottom: 64px; }
+  .hero { padding: 56px 16px 40px; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero-stats { gap: 20px; }
+  .hero-stat-value { font-size: 1.3rem; }
+  .content { padding: 0 12px 80px; }
+  .card { padding: 20px 16px; }
+  .day-header { flex-wrap: wrap; }
+  .day-badge { width: 40px; height: 40px; font-size: 1.1rem; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .overview-columns { grid-template-columns: 1fr; }
+  .weather-grid { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .day-quick-stats { gap: 10px; }
+  .elevation-chart svg { height: 140px; }
+  .photo-thumb { width: 150px; height: 100px; }
+  .gear-notes { max-width: 160px; }
+}
+
+@media (max-width: 420px) {
+  .hero-stats { gap: 14px; }
+  .day-quick-stats { flex-direction: column; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP NAV ============ -->
+<nav class="top-nav">
+  <div class="nav-brand">Switchback Adventures</div>
+  <div class="nav-controls">
+    <button class="toggle-btn" id="unitToggle" aria-label="Toggle units">km / m</button>
+    <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme"></button>
+  </div>
+</nav>
+
+<!-- ============ TAB BAR ============ -->
+<div class="tab-bar" id="tabBar">
+  <button class="tab-btn active" data-tab="overview">Overview</button>
+  <button class="tab-btn" data-tab="days">Day by Day</button>
+  <button class="tab-btn" data-tab="preparation">Preparation</button>
+  <button class="tab-btn" data-tab="weather">Weather</button>
+  <button class="tab-btn" data-tab="gear">Gear</button>
+  <button class="tab-btn" data-tab="info">General Info</button>
+</div>
+
+<!-- ============ HERO ============ -->
+<div class="hero" id="heroSection">
+  <div class="hero-subtitle" id="heroSubtitle"></div>
+  <h1 id="heroTitle">Travel Guide</h1>
+  <div class="hero-dates" id="heroDates"></div>
+  <div class="hero-stats" id="heroStats"></div>
+</div>
+
+<!-- ============ MAIN CONTENT ============ -->
+<div class="content" id="mainContent">
+  <div class="loading" id="loadingState">
+    <div class="loading-spinner"></div>
+    <p>Loading trip data...</p>
+  </div>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-inner">
+    <button class="mobile-nav-btn active" data-tab="overview"><span class="m-icon">&#9678;</span>Overview</button>
+    <button class="mobile-nav-btn" data-tab="days"><span class="m-icon">&#8599;</span>Days</button>
+    <button class="mobile-nav-btn" data-tab="preparation"><span class="m-icon">&#9670;</span>Prep</button>
+    <button class="mobile-nav-btn" data-tab="weather"><span class="m-icon">&#9729;</span>Weather</button>
+    <button class="mobile-nav-btn" data-tab="gear"><span class="m-icon">&#9744;</span>Gear</button>
+    <button class="mobile-nav-btn" data-tab="info"><span class="m-icon">&#8505;</span>Info</button>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script>
+// ================================================================
+// STATE
+// ================================================================
+let tripData = null;
+let useMetric = true;
+let activeTab = 'overview';
+const STORAGE_KEY = 'travelplanner-gear';
+const PHOTO_CACHE = {};
+
+// ================================================================
+// THEME
+// ================================================================
+const themeBtn = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('tp-theme');
+if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+updateThemeBtn();
+
+themeBtn.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+  localStorage.setItem('tp-theme', isDark ? 'light' : 'dark');
+  updateThemeBtn();
+  if (tripData) renderElevationCharts();
+});
+
+function updateThemeBtn() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  themeBtn.textContent = isDark ? '☀ Light' : '☾ Dark';
+}
+
+// ================================================================
+// UNITS
+// ================================================================
+const unitBtn = document.getElementById('unitToggle');
+const savedUnit = localStorage.getItem('tp-units');
+if (savedUnit === 'imperial') { useMetric = false; unitBtn.textContent = 'mi / ft'; }
+
+unitBtn.addEventListener('click', () => {
+  useMetric = !useMetric;
+  unitBtn.textContent = useMetric ? 'km / m' : 'mi / ft';
+  localStorage.setItem('tp-units', useMetric ? 'metric' : 'imperial');
+  if (tripData) renderAll();
+});
+
+function fmtDist(km) {
+  if (km === undefined || km === null) return '';
+  return useMetric ? `${km} km` : `${(km * 0.621371).toFixed(1)} mi`;
+}
+function fmtElev(m) {
+  if (m === undefined || m === null) return '';
+  return useMetric ? `${m} m` : `${Math.round(m * 3.28084)} ft`;
+}
+function fmtSpeed(kmh) {
+  if (typeof kmh !== 'number') return kmh;
+  return useMetric ? `${kmh} km/h` : `${Math.round(kmh * 0.621371)} mph`;
+}
+function fmtTemp(c) {
+  if (c === undefined || c === null) return '';
+  return useMetric ? `${c}°C` : `${Math.round(c * 9/5 + 32)}°F`;
+}
+
+// ================================================================
+// MARKDOWN HELPER — converts **bold** and \n to HTML
+// ================================================================
+function md(text) {
+  if (!text) return '';
+  // Convert **bold** to <strong>
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Convert newlines to <br>
+  text = text.replace(/\n/g, '<br>');
+  return text;
+}
+
+// Combined: markdown + unit conversion
+function mdu(text) {
+  return md(convertUnitsInText(text));
+}
+
+// Prose: double newlines → paragraph breaks, single → <br>, plus markdown + units
+function mdProse(text) {
+  if (!text) return '';
+  text = convertUnitsInText(text);
+  // Convert **bold**
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Double newlines → paragraph break
+  text = text.replace(/\n\n/g, '</p><p style="margin-top:12px">');
+  // Single newlines → <br>
+  text = text.replace(/\n/g, '<br>');
+  return '<p>' + text + '</p>';
+}
+
+// ================================================================
+// PROSE UNIT CONVERSION
+// ================================================================
+function convertUnitsInText(text) {
+  if (!text || useMetric) return text || '';
+
+  // 1. Convert elevation ranges: "3,167–4,808m" or "3,000–4,000 m"
+  text = text.replace(/([\d,]+)\s*[–-]\s*([\d,]+)\s*m\b(?![\w/])/g, (match, lo, hi) => {
+    const mLo = parseFloat(lo.replace(/,/g, ''));
+    const mHi = parseFloat(hi.replace(/,/g, ''));
+    if (mLo >= 50 && mHi <= 10000) {
+      return Math.round(mLo * 3.28084).toLocaleString() + '–' + Math.round(mHi * 3.28084).toLocaleString() + ' ft';
+    }
+    return match;
+  });
+
+  // 2. Convert single elevations with commas: "3,167m", "4,808 m", "1,035m"
+  text = text.replace(/([\d,]+)\s*m\b(?![\w/])/g, (match, num) => {
+    const meters = parseFloat(num.replace(/,/g, ''));
+    if (meters >= 50 && meters <= 10000) {
+      return Math.round(meters * 3.28084).toLocaleString() + ' ft';
+    }
+    return match;
+  });
+
+  // 3. Convert plain meter values: "800m", "250 m" (word boundary start)
+  text = text.replace(/\b(\d{2,5})\s*m\b(?![\w/])/g, (match, num) => {
+    const meters = parseInt(num);
+    if (meters >= 50 && meters <= 10000) {
+      return Math.round(meters * 3.28084).toLocaleString() + ' ft';
+    }
+    return match;
+  });
+
+  // 4. Convert "X–Y km/h" or "X-Y km/h" (speed ranges) — must be before km conversion
+  text = text.replace(/(\d+)\s*[–-]\s*(\d+)\s*km\/h/gi, (match, lo, hi) => {
+    return Math.round(parseFloat(lo) * 0.621371) + '–' + Math.round(parseFloat(hi) * 0.621371) + ' mph';
+  });
+
+  // 5. Convert "X km/h" (single speed)
+  text = text.replace(/(\d+\.?\d*)\s*km\/h/gi, (match, num) => {
+    return Math.round(parseFloat(num) * 0.621371) + ' mph';
+  });
+
+  // 6. Convert "Xkm" (no space) and "X.X km" or "X km" (distances)
+  text = text.replace(/(\d+\.?\d*)\s*km\b/gi, (match, num) => {
+    return (parseFloat(num) * 0.621371).toFixed(1) + ' mi';
+  });
+
+  return text;
+}
+
+// Short alias: unit conversion only (no markdown)
+function ut(text) { return convertUnitsInText(text); }
+
+// ================================================================
+// TAB SWITCHING
+// ================================================================
+function switchTab(tab) {
+  activeTab = tab;
+  // Update tab bar buttons
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+  });
+  // Update mobile nav
+  document.querySelectorAll('.mobile-nav-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+  });
+  // Show/hide panels
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'panel-' + tab);
+  });
+  // Scroll to top of content
+  window.scrollTo({ top: document.getElementById('mainContent').offsetTop - 120, behavior: 'smooth' });
+  // Trigger fade-in animations
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.tab-panel.active .fade-in').forEach(el => {
+      el.classList.add('visible');
+    });
+  });
+  // Re-render elevation charts when switching to days tab
+  if (tab === 'days') setTimeout(renderElevationCharts, 50);
+}
+
+document.getElementById('tabBar').addEventListener('click', e => {
+  const btn = e.target.closest('.tab-btn');
+  if (btn) switchTab(btn.dataset.tab);
+});
+document.getElementById('mobileNav').addEventListener('click', e => {
+  const btn = e.target.closest('.mobile-nav-btn');
+  if (btn) switchTab(btn.dataset.tab);
+});
+
+// ================================================================
+// LOAD DATA
+// ================================================================
+async function loadData() {
+  try {
+    const res = await fetch('trip-data.json');
+    if (!res.ok) throw new Error('Not found');
+    tripData = await res.json();
+    document.title = tripData.tripName + ' — Travel Guide';
+    renderAll();
+  } catch (e) {
+    document.getElementById('loadingState').innerHTML =
+      '<div class="error-msg"><h3>Could not load trip data</h3>' +
+      '<p style="margin-top:8px;font-size:0.9rem;">Make sure <code>trip-data.json</code> is in the same folder as this file.</p></div>';
+  }
+}
+
+// ================================================================
+// RENDER ALL
+// ================================================================
+function renderAll() {
+  const d = tripData;
+
+  // Hero
+  document.getElementById('heroTitle').textContent = d.tripName;
+  document.getElementById('heroSubtitle').textContent = d.subtitle || '';
+  document.getElementById('heroDates').textContent = d.dates || '';
+
+  const s = d.stats || {};
+  document.getElementById('heroStats').innerHTML = `
+    <div class="hero-stat">
+      <div class="hero-stat-value">${useMetric ? s.totalDistance : (s.totalDistance * 0.621371).toFixed(0)}</div>
+      <div class="hero-stat-label">${useMetric ? 'Kilometers' : 'Miles'}</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">${useMetric ? s.totalAscent?.toLocaleString() : Math.round(s.totalAscent * 3.28084).toLocaleString()}</div>
+      <div class="hero-stat-label">Ascent (${useMetric ? 'm' : 'ft'})</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">${(d.days || []).length}</div>
+      <div class="hero-stat-label">Days</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-value">${s.difficulty || ''}</div>
+      <div class="hero-stat-label">Difficulty</div>
+    </div>
+  `;
+
+  // Build all tab panels as one string, assign once
+  const main = document.getElementById('mainContent');
+  let html = '';
+  html += `<div class="tab-panel ${activeTab === 'overview' ? 'active' : ''}" id="panel-overview">${renderOverview(d)}</div>`;
+  html += `<div class="tab-panel ${activeTab === 'days' ? 'active' : ''}" id="panel-days">${renderDays(d.days)}</div>`;
+  html += `<div class="tab-panel ${activeTab === 'preparation' ? 'active' : ''}" id="panel-preparation">${renderPreparation(d.preparation)}</div>`;
+  html += `<div class="tab-panel ${activeTab === 'weather' ? 'active' : ''}" id="panel-weather">${renderWeather(d.days)}</div>`;
+  html += `<div class="tab-panel ${activeTab === 'gear' ? 'active' : ''}" id="panel-gear">${renderGear(d.gear)}</div>`;
+  html += `<div class="tab-panel ${activeTab === 'info' ? 'active' : ''}" id="panel-info">${renderGeneralInfo(d.generalInfo)}</div>`;
+  html += '<footer>Built with Switchback Adventures</footer>';
+  main.innerHTML = html;
+
+  // Post-render init
+  renderElevationCharts();
+  initGearChecklist();
+  initDeepDives();
+  initLightbox();
+  loadPhotos();
+
+  // Trigger initial fade-in
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.tab-panel.active .fade-in').forEach(el => {
+      el.classList.add('visible');
+    });
+  });
+}
+
+// ================================================================
+// OVERVIEW TAB
+// ================================================================
+function renderOverview(d) {
+  const s = d.stats || {};
+  const highlights = (d.highlights || []).map(h => `<span class="highlight-tag">${ut(esc(h))}</span>`).join('');
+
+  // Route Overview items
+  const routeItems = (d.days || []).map(day => {
+    const diffClass = getDifficultyClass(day.difficulty);
+    return `<li class="route-overview-item">
+      <div class="route-day-num">${day.day}</div>
+      <div class="route-day-info">
+        <div class="route-day-title">${esc(day.title || 'Day ' + day.day)}</div>
+        <div class="route-day-meta">
+          <span>${fmtDist(day.distance)}</span>
+          <span>${fmtElev(day.ascent)} ascent</span>
+          ${day.estimatedHours ? `<span>${day.estimatedHours}h</span>` : ''}
+        </div>
+      </div>
+      <div class="route-day-difficulty ${diffClass}">${esc(day.difficulty || '')}</div>
+    </li>`;
+  }).join('');
+
+  // Accommodations list items
+  const accomItems = (d.days || [])
+    .filter(day => day.accommodation && day.accommodation.name)
+    .map(day => `<li class="accom-item">
+      <div class="accom-day-num">${day.day}</div>
+      <div class="accom-info">
+        <div class="accom-name">${esc(day.accommodation.name)}</div>
+        <div class="accom-location">${esc(day.accommodation.type || '')}</div>
+      </div>
+      <div class="accom-route-label">${esc(day.title || '')}</div>
+    </li>`).join('');
+
+  return `
+  <div class="fade-in">
+    <h2 class="section-title">Overview</h2>
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-value">${fmtDist(s.totalDistance).split(' ')[0]}</div><div class="stat-label">${useMetric ? 'Kilometers' : 'Miles'}</div></div>
+      <div class="stat-item"><div class="stat-value">${fmtElev(s.totalAscent).split(' ')[0]}</div><div class="stat-label">Ascent (${useMetric ? 'm' : 'ft'})</div></div>
+      <div class="stat-item"><div class="stat-value">${fmtElev(s.totalDescent).split(' ')[0]}</div><div class="stat-label">Descent (${useMetric ? 'm' : 'ft'})</div></div>
+      <div class="stat-item"><div class="stat-value">${(s.duration || '').split('/')[0].trim()}</div><div class="stat-label">Duration</div></div>
+      <div class="stat-item"><div class="stat-value">${(s.difficulty || '').split('(')[0].trim()}</div><div class="stat-label">Difficulty</div></div>
+      <div class="stat-item"><div class="stat-value">${(d.days || []).length}</div><div class="stat-label">Days</div></div>
+    </div>
+    <div class="card">
+      <div style="line-height:1.8;font-size:0.95rem">${mdProse(d.overview || '')}</div>
+      ${highlights ? '<div class="highlights">' + highlights + '</div>' : ''}
+    </div>
+    <div class="overview-columns">
+      <div>
+        <h3 class="overview-col-title">Accommodations</h3>
+        <div class="card" style="padding:8px 16px;">
+          <ul class="accom-list">${accomItems}</ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="overview-col-title">Route Overview</h3>
+        <div class="card" style="padding:8px 16px;">
+          <ul class="route-overview-list">${routeItems}</ul>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ================================================================
+// DAYS TAB
+// ================================================================
+function getDifficultyClass(diff) {
+  if (!diff) return 'moderate';
+  const d = diff.toLowerCase();
+  if (d.includes('very') || d.includes('extreme') || d.includes('pd+') || d.includes('strenuous')) return 'very-challenging';
+  if (d.includes('challeng') || d.includes('hard') || d.includes('difficult')) return 'challenging';
+  if (d.includes('easy') || d.includes('light')) return 'easy';
+  return 'moderate';
+}
+
+function renderDays(days) {
+  if (!days || !days.length) return '';
+
+  const cards = days.map(day => {
+    const diffClass = getDifficultyClass(day.difficulty);
+
+    // Terrain tags
+    const tags = (day.terrainTags || []).map(t => `<span class="terrain-tag">${esc(t)}</span>`).join('');
+    // If no terrainTags, try to split terrain string
+    const fallbackTags = !day.terrainTags && day.terrain
+      ? day.terrain.split(/,\s*/).map(t => `<span class="terrain-tag">${esc(t.trim())}</span>`).join('')
+      : '';
+
+    // Waypoints
+    const wps = (day.waypoints || []).map(wp => {
+      const iconMap = {
+        water: ['💧', 'wp-water'], viewpoint: ['👁', 'wp-viewpoint'], warning: ['⚠', 'wp-warning'],
+        food: ['🍴', 'wp-food'], transport: ['🚌', 'wp-transport'], escape: ['↩', 'wp-escape'],
+        toilet: ['🚻', 'wp-toilet'], campsite: ['⛺', 'wp-campsite'], summit: ['▲', 'wp-summit'],
+        bridge: ['🌉', 'wp-bridge']
+      };
+      const [icon, cls] = iconMap[wp.type] || ['●', 'wp-viewpoint'];
+      return `<div class="waypoint">
+        <div class="wp-icon ${cls}">${icon}</div>
+        <div class="wp-km">${fmtDist(wp.km)}</div>
+        <div class="wp-info">
+          <div class="wp-name">${esc(wp.name)}</div>
+          ${wp.notes ? `<div class="wp-notes">${ut(wp.notes)}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    // Escape routes
+    const escRoutes = (day.escapeRoutes || []).map(er => `
+      <div class="escape-route">
+        <div class="escape-route-icon">↩</div>
+        <div>
+          <div class="escape-route-name">${esc(er.name)} ${er.km !== undefined ? `<span style="color:var(--text-muted);font-weight:400;font-size:0.82rem">at ${fmtDist(er.km)}</span>` : ''}</div>
+          <div class="escape-route-desc">${ut(er.description || '')}</div>
+        </div>
+      </div>
+    `).join('');
+
+    // Interesting links
+    const links = (day.interestingLinks || []).map(link => {
+      const iconMap = { alltrails: '🥾', komoot: '🗺', youtube: '▶', blog: '📝', official: '🔗' };
+      const icon = iconMap[link.type] || '🔗';
+      return `<a class="day-link" href="${esc(link.url)}" target="_blank" rel="noopener">${icon} ${esc(link.title)}</a>`;
+    }).join('');
+
+    // Photo placeholders
+    const photos = (day.photos || []).map((p, i) =>
+      `<div class="skeleton photo-thumb" data-day="${day.day}" data-idx="${i}" data-query="${esc(p.query)}" data-caption="${esc(p.caption || '')}" style="width:180px;height:120px;"></div>`
+    ).join('');
+
+    // Accommodation
+    const accom = day.accommodation ? `
+      <div class="accom-badge">
+        <span class="accom-type-label">${esc(day.accommodation.type || 'Stay')}</span>
+        <strong>${esc(day.accommodation.name)}</strong>
+        ${day.accommodation.notes ? `<span style="color:var(--text-muted);font-size:0.82rem"> — ${ut(day.accommodation.notes)}</span>` : ''}
+      </div>` : '';
+
+    return `
+    <div class="card day-card fade-in">
+      <div class="day-header">
+        <div class="day-badge ${diffClass}">${day.day}</div>
+        <div class="day-title-group">
+          <div class="day-title">${esc(day.title)}</div>
+          <div class="day-subtitle">
+            <span class="difficulty-pill ${diffClass}">${esc(day.difficulty)}</span>
+            ${day.estimatedHours ? `<span>~${day.estimatedHours}h moving time</span>` : ''}
+          </div>
+        </div>
+      </div>
+
+      <div class="day-quick-stats">
+        <div class="day-qs"><span class="qs-icon">↔</span> <strong>${fmtDist(day.distance)}</strong></div>
+        <div class="day-qs"><span class="qs-icon">↑</span> <strong>${fmtElev(day.ascent)}</strong></div>
+        <div class="day-qs"><span class="qs-icon">↓</span> <strong>${fmtElev(day.descent)}</strong></div>
+        ${day.elevation ? `<div class="day-qs"><span class="qs-icon">⛰</span> ${fmtElev(day.elevation.min)} – ${fmtElev(day.elevation.max)}</div>` : ''}
+      </div>
+
+      <div class="terrain-tags">${tags || fallbackTags}</div>
+
+      <button class="deep-dive-btn" data-day="${day.day}">
+        <span class="arrow">▼</span>
+        <span class="toggle-text">Deep Dive</span>
+      </button>
+
+      <div class="deep-dive" id="deep-dive-${day.day}">
+        <div class="deep-dive-inner">
+          <div class="elevation-chart" id="elev-day-${day.day}"></div>
+
+          <div class="day-description" style="line-height:1.8;margin-bottom:20px;">
+            ${mdProse(day.description || '')}
+          </div>
+
+          ${wps ? `<div class="waypoints"><div class="waypoints-title">Waypoints</div>${wps}</div>` : ''}
+
+          ${escRoutes ? `<div class="escape-routes"><div class="waypoints-title">Escape Routes</div>${escRoutes}</div>` : ''}
+
+          ${photos ? `<div class="photo-grid">${photos}</div>` : ''}
+
+          ${links ? `<div class="day-links">${links}</div>` : ''}
+
+          ${accom}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `<div class="fade-in"><h2 class="section-title">Day by Day</h2></div>${cards}`;
+}
+
+// ================================================================
+// DEEP DIVE EXPAND/COLLAPSE
+// ================================================================
+function initDeepDives() {
+  document.querySelectorAll('.deep-dive-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dayNum = btn.dataset.day;
+      const dive = document.getElementById('deep-dive-' + dayNum);
+      if (!dive) return;
+      const isOpen = dive.classList.contains('open');
+      dive.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.querySelector('.toggle-text').textContent = isOpen ? 'Deep Dive' : 'Close';
+      // Re-render elevation chart when opening
+      if (!isOpen) setTimeout(renderElevationCharts, 100);
+    });
+  });
+}
+
+// ================================================================
+// ELEVATION CHARTS (interactive)
+// ================================================================
+function renderElevationCharts() {
+  if (!tripData || !tripData.days) return;
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const strokeColor = isDark ? '#6aaa70' : '#3d7a4a';
+  const fillColor = isDark ? 'rgba(106,170,112,0.15)' : 'rgba(61,122,74,0.12)';
+  const gridColor = isDark ? '#2e3a2e' : '#DDD9D0';
+  const labelColor = isDark ? '#8a8672' : '#6b6b6b';
+
+  tripData.days.forEach(day => {
+    const el = document.getElementById(`elev-day-${day.day}`);
+    if (!el || !day.elevation || !day.elevation.profile || day.elevation.profile.length < 2) {
+      if (el) el.style.display = 'none';
+      return;
+    }
+
+    el.style.display = '';
+    const pts = day.elevation.profile;
+    const W = 800, H = 180, PAD_L = 48, PAD_R = 16, PAD_T = 20, PAD_B = 28;
+    const plotW = W - PAD_L - PAD_R;
+    const plotH = H - PAD_T - PAD_B;
+
+    const xMin = pts[0][0], xMax = pts[pts.length - 1][0];
+    const rawYMin = Math.min(...pts.map(p => p[1]));
+    const rawYMax = Math.max(...pts.map(p => p[1]));
+    const yPad = Math.max((rawYMax - rawYMin) * 0.08, 20);
+    const yMin = rawYMin - yPad;
+    const yMax = rawYMax + yPad;
+
+    const sx = v => PAD_L + (v - xMin) / (xMax - xMin) * plotW;
+    const sy = v => PAD_T + (1 - (v - yMin) / (yMax - yMin)) * plotH;
+
+    // Grid lines (5 lines)
+    const gridSteps = 5;
+    let gridLines = '';
+    for (let i = 0; i <= gridSteps; i++) {
+      const yVal = yMin + (yMax - yMin) * (i / gridSteps);
+      const y = sy(yVal);
+      const label = useMetric ? Math.round(yVal) : Math.round(yVal * 3.28084);
+      gridLines += `<line x1="${PAD_L}" x2="${W - PAD_R}" y1="${y}" y2="${y}" class="elev-grid-line" style="stroke:${gridColor}"/>`;
+      gridLines += `<text x="${PAD_L - 6}" y="${y + 3}" text-anchor="end" class="elev-label" style="fill:${labelColor}">${label}</text>`;
+    }
+
+    // X-axis labels
+    const xSteps = Math.min(5, pts.length - 1);
+    let xLabels = '';
+    for (let i = 0; i <= xSteps; i++) {
+      const xVal = xMin + (xMax - xMin) * (i / xSteps);
+      const x = sx(xVal);
+      const label = useMetric ? xVal.toFixed(1) : (xVal * 0.621371).toFixed(1);
+      xLabels += `<text x="${x}" y="${H - 4}" text-anchor="middle" class="elev-label" style="fill:${labelColor}">${label}</text>`;
+    }
+    // Unit label
+    xLabels += `<text x="${W - PAD_R}" y="${H - 4}" text-anchor="end" class="elev-label" style="fill:${labelColor}">${useMetric ? 'km' : 'mi'}</text>`;
+
+    // Paths
+    const pathPts = pts.map(p => `${sx(p[0]).toFixed(1)},${sy(p[1]).toFixed(1)}`).join(' L');
+    const areaPath = `M${sx(pts[0][0]).toFixed(1)},${sy(pts[0][1]).toFixed(1)} L${pathPts} L${sx(pts[pts.length - 1][0]).toFixed(1)},${PAD_T + plotH} L${sx(pts[0][0]).toFixed(1)},${PAD_T + plotH} Z`;
+
+    // Summit marker (highest point)
+    const summit = pts.reduce((max, p) => p[1] > max[1] ? p : max, pts[0]);
+    const summitX = sx(summit[0]);
+    const summitY = sy(summit[1]);
+    const summitLabel = useMetric ? `${Math.round(summit[1])}m` : `${Math.round(summit[1] * 3.28084)}ft`;
+
+    // Hover detection rects
+    const sliceW = plotW / pts.length;
+    const hoverRects = pts.map((p, i) => {
+      const x = sx(p[0]) - sliceW / 2;
+      return `<rect x="${x}" y="${PAD_T}" width="${sliceW}" height="${plotH}" fill="transparent" data-idx="${i}" class="elev-hover-rect" style="cursor:crosshair"/>`;
+    }).join('');
+
+    el.innerHTML = `
+      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">
+        ${gridLines}
+        ${xLabels}
+        <path class="elev-area" d="${areaPath}" style="fill:${fillColor}"/>
+        <path class="elev-path" d="M${pathPts}" style="stroke:${strokeColor}"/>
+        <circle class="elev-summit-dot" cx="${summitX}" cy="${summitY}" r="5"/>
+        <text class="elev-summit-label" x="${summitX}" y="${summitY - 10}" text-anchor="middle">${summitLabel}</text>
+        <line class="elev-hover-line" id="hover-line-${day.day}" x1="0" y1="${PAD_T}" x2="0" y2="${PAD_T + plotH}"/>
+        <circle class="elev-hover-dot" id="hover-dot-${day.day}" cx="0" cy="0" r="5"/>
+        ${hoverRects}
+      </svg>
+      <div class="elev-tooltip" id="tooltip-${day.day}">
+        <span class="elev-tooltip-dist"></span>
+        <span class="elev-tooltip-elev"></span>
+      </div>`;
+
+    // Attach hover events
+    const svg = el.querySelector('svg');
+    const tooltip = document.getElementById(`tooltip-${day.day}`);
+    const hoverLine = document.getElementById(`hover-line-${day.day}`);
+    const hoverDot = document.getElementById(`hover-dot-${day.day}`);
+
+    svg.querySelectorAll('.elev-hover-rect').forEach(rect => {
+      rect.addEventListener('mouseenter', () => {
+        const i = parseInt(rect.dataset.idx);
+        const p = pts[i];
+        const px = sx(p[0]);
+        const py = sy(p[1]);
+
+        hoverLine.setAttribute('x1', px);
+        hoverLine.setAttribute('x2', px);
+        hoverLine.style.opacity = '1';
+        hoverDot.setAttribute('cx', px);
+        hoverDot.setAttribute('cy', py);
+        hoverDot.style.opacity = '1';
+
+        const distVal = useMetric ? `${p[0].toFixed(1)} km` : `${(p[0] * 0.621371).toFixed(1)} mi`;
+        const elevVal = useMetric ? `${Math.round(p[1])} m` : `${Math.round(p[1] * 3.28084)} ft`;
+        tooltip.querySelector('.elev-tooltip-dist').textContent = distVal;
+        tooltip.querySelector('.elev-tooltip-elev').textContent = elevVal;
+        tooltip.classList.add('visible');
+      });
+
+      rect.addEventListener('mousemove', e => {
+        const rect = el.getBoundingClientRect();
+        let left = e.clientX - rect.left + 12;
+        let top = e.clientY - rect.top - 40;
+        // Keep tooltip in bounds
+        if (left + 140 > rect.width) left = left - 160;
+        if (top < 0) top = e.clientY - rect.top + 16;
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+      });
+
+      rect.addEventListener('mouseleave', () => {
+        hoverLine.style.opacity = '0';
+        hoverDot.style.opacity = '0';
+        tooltip.classList.remove('visible');
+      });
+    });
+  });
+}
+
+// ================================================================
+// WEATHER TAB
+// ================================================================
+function renderWeather(days) {
+  if (!days || !days.length) return '';
+
+  const cards = days.filter(d => d.weather).map(day => {
+    const w = day.weather;
+    const tempHigh = fmtTemp(w.tempHigh);
+    const tempLow = fmtTemp(w.tempLow);
+
+    // Temperature bar: position based on temp range -30 to 45
+    const barMin = Math.max(0, ((w.tempLow + 30) / 75) * 100);
+    const barMax = Math.min(100, ((w.tempHigh + 30) / 75) * 100);
+
+    // Precipitation drops
+    const totalDrops = 10;
+    const filledDrops = Math.round(w.precipitation / 10);
+    let drops = '';
+    for (let i = 0; i < totalDrops; i++) {
+      const height = 8 + Math.random() * 18;
+      const isFilled = i < filledDrops;
+      drops += `<div class="precip-drop ${isFilled ? '' : 'empty'}" style="height:${height}px;opacity:${isFilled ? 0.6 + Math.random() * 0.4 : 0.3}"></div>`;
+    }
+
+    const alerts = (w.alerts || []).map(a => `<div class="weather-alert">${ut(a)}</div>`).join('');
+
+    return `<div class="weather-card">
+      <div class="weather-card-title">Day ${day.day}: ${esc(day.title)}</div>
+
+      <div class="weather-row"><span class="label">Temperature</span></div>
+      <div class="temp-bar-container">
+        <div class="temp-bar-fill" style="margin-left:${barMin}%;width:${barMax - barMin}%"></div>
+      </div>
+      <div class="temp-labels"><span class="temp-low">${tempLow}</span><span class="temp-high">${tempHigh}</span></div>
+
+      <div class="weather-row" style="margin-top:12px"><span class="label">Precipitation</span><span class="precip-value">${w.precipitation}%</span></div>
+      <div class="precip-visual">${drops}</div>
+
+      <div class="weather-row"><span class="label">Conditions</span><span>${ut(w.conditions)}</span></div>
+      <div class="weather-row"><span class="label">Wind</span><span>${ut(w.wind)}</span></div>
+      <div class="weather-row"><span class="label">Daylight</span><span>${w.daylight}</span></div>
+      ${w.sunrise ? `<div class="weather-row"><span class="label">Sunrise / Sunset</span><span>${w.sunrise} / ${w.sunset}</span></div>` : ''}
+      ${alerts}
+    </div>`;
+  }).join('');
+
+  return `<div class="fade-in"><h2 class="section-title">Weather</h2><div class="weather-grid">${cards}</div></div>`;
+}
+
+// ================================================================
+// PREPARATION TAB
+// ================================================================
+function renderPreparation(prep) {
+  if (!prep) return '';
+
+  const phases = (prep.schedule || []).map(p => `
+    <div class="training-phase">
+      <div class="training-weeks">Weeks ${p.weeks}</div>
+      <div class="training-focus">${esc(p.focus)}</div>
+      <div class="training-desc">${ut(p.description)}</div>
+    </div>`).join('');
+
+  // Recommended training tips
+  const tips = (prep.recommendedTraining || []).map(t => `<li>${ut(t)}</li>`).join('');
+
+  // What to expect per day
+  const expects = (prep.whatToExpect || []).map(e => `
+    <div class="expect-card">
+      <div class="expect-day-badge">${e.day}</div>
+      <div class="expect-desc">${ut(e.description)}</div>
+    </div>`).join('');
+
+  return `
+  <div class="fade-in">
+    <h2 class="section-title">Preparation</h2>
+    <div class="card">
+      <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:12px;">Fitness Requirements</h3>
+      <p style="line-height:1.8;margin-bottom:16px;font-size:0.92rem">${ut(prep.fitnessLevel)}</p>
+      ${prep.physicalDemands ? `<p style="line-height:1.8;color:var(--text-muted);font-size:0.92rem">${ut(prep.physicalDemands)}</p>` : ''}
+    </div>
+    ${phases ? `
+    <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin:28px 0 16px;">${prep.trainingWeeks || 8}-Week Training Plan</h3>
+    <div class="card"><div class="training-timeline">${phases}</div></div>` : ''}
+    ${tips ? `
+    <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin:28px 0 16px;">Training Tips</h3>
+    <div class="card"><ul style="padding-left:20px;font-size:0.9rem;line-height:1.7">${tips}</ul></div>` : ''}
+    ${expects ? `
+    <h3 style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin:28px 0 16px;">What to Expect Each Day</h3>
+    <div class="card">${expects}</div>` : ''}
+  </div>`;
+}
+
+// ================================================================
+// GEAR TAB
+// ================================================================
+function renderGear(gear) {
+  if (!gear || !gear.length) return '';
+
+  let totalItems = 0;
+  gear.forEach(cat => totalItems += cat.items.length);
+
+  const categories = gear.map(cat => {
+    const items = cat.items.map(item => {
+      const id = cat.category + ':' + item.name;
+      return `<div class="gear-item" data-id="${esc(id)}">
+        <div class="gear-check">✓</div>
+        <div class="gear-name">${esc(item.name)}</div>
+        ${item.essential ? '<div class="gear-essential" title="Essential">★</div>' : ''}
+        ${item.notes ? `<div class="gear-notes">${ut(item.notes)}</div>` : ''}
+      </div>`;
+    }).join('');
+
+    return `
+    <div class="gear-category">
+      <div class="gear-cat-header" data-category="${esc(cat.category)}">
+        <span class="gear-cat-title">${esc(cat.category)} <span style="color:var(--text-muted);font-size:0.82rem;font-family:var(--font-body);font-weight:500">(${cat.items.length})</span></span>
+        <span class="gear-cat-arrow">▼</span>
+      </div>
+      <div class="gear-cat-items" data-cat-items="${esc(cat.category)}">${items}</div>
+    </div>`;
+  }).join('');
+
+  return `
+  <div class="fade-in">
+    <h2 class="section-title">Gear Checklist</h2>
+    <div class="gear-progress">
+      <div class="gear-progress-bar"><div class="gear-progress-fill" id="gearFill" style="width:0%"></div></div>
+      <div class="gear-progress-text" id="gearCount">0 of ${totalItems} packed</div>
+      <button class="gear-clear-btn" id="gearClear">Clear All</button>
+    </div>
+    <div class="card" id="gearList" style="padding:8px 24px">${categories}</div>
+  </div>`;
+}
+
+function initGearChecklist() {
+  const list = document.getElementById('gearList');
+  if (!list) return;
+
+  let checked = {};
+  try { checked = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch (e) {}
+
+  function apply() {
+    const items = list.querySelectorAll('.gear-item');
+    let total = items.length, done = 0;
+    items.forEach(el => {
+      const id = el.getAttribute('data-id');
+      if (checked[id]) { el.classList.add('checked'); done++; }
+      else { el.classList.remove('checked'); }
+    });
+    const fill = document.getElementById('gearFill');
+    const count = document.getElementById('gearCount');
+    if (fill) fill.style.width = (total ? (done / total * 100) : 0) + '%';
+    if (count) count.textContent = `${done} of ${total} packed`;
+  }
+
+  // Gear item click
+  list.addEventListener('click', e => {
+    const item = e.target.closest('.gear-item');
+    if (item) {
+      const id = item.getAttribute('data-id');
+      checked[id] = !checked[id];
+      if (!checked[id]) delete checked[id];
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(checked));
+      apply();
+      return;
+    }
+    // Category collapse toggle
+    const catHeader = e.target.closest('.gear-cat-header');
+    if (catHeader) {
+      const catName = catHeader.dataset.category;
+      const itemsDiv = list.querySelector(`[data-cat-items="${catName}"]`);
+      if (itemsDiv) {
+        catHeader.classList.toggle('collapsed');
+        itemsDiv.classList.toggle('collapsed');
+      }
+    }
+  });
+
+  document.getElementById('gearClear')?.addEventListener('click', () => {
+    checked = {};
+    localStorage.setItem(STORAGE_KEY, '{}');
+    apply();
+  });
+
+  apply();
+}
+
+// ================================================================
+// GENERAL INFO TAB
+// ================================================================
+function renderGeneralInfo(info) {
+  if (!info) return '';
+
+  // Build cards
+  let cards = '';
+
+  const simpleCards = [
+    ['✈', 'Getting There', info.gettingThere],
+    ['📋', 'Permits & Bookings', info.permits],
+    ['💱', 'Currency & Money', info.currency],
+    ['🗣', 'Language', info.language],
+    ['📱', 'Mobile Coverage', info.mobileCoverage],
+    ['🛂', 'Visa & Entry', info.visaInfo],
+    ['🏥', 'Health & Insurance', info.healthInsurance],
+  ].filter(c => c[2]);
+
+  simpleCards.forEach(([icon, title, text]) => {
+    cards += `<div class="info-card">
+      <div class="info-card-title"><span class="info-card-icon">${icon}</span>${title}</div>
+      <div class="info-card-body">${mdu(text)}</div>
+    </div>`;
+  });
+
+  // Emergency contacts (structured table if available)
+  if (info.emergencyContacts && info.emergencyContacts.length) {
+    const rows = info.emergencyContacts.map(c =>
+      `<tr><td style="font-weight:600">${esc(c.service)}</td><td><code>${esc(c.number)}</code></td><td style="color:var(--text-muted)">${esc(c.notes || '')}</td></tr>`
+    ).join('');
+    cards += `<div class="info-card">
+      <div class="info-card-title"><span class="info-card-icon">🚨</span>Emergency Contacts</div>
+      <table class="emergency-table">
+        <thead><tr><th>Service</th><th>Number</th><th>Notes</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  } else if (info.emergency) {
+    cards += `<div class="info-card">
+      <div class="info-card-title"><span class="info-card-icon">🚨</span>Emergency</div>
+      <div class="info-card-body">${mdu(info.emergency)}</div>
+    </div>`;
+  }
+
+  // Useful apps
+  if (info.usefulApps && info.usefulApps.length) {
+    const apps = info.usefulApps.map(a => `
+      <div class="app-item">
+        <div><div class="app-name">${esc(a.name)}</div><div class="app-desc">${esc(a.description)}</div></div>
+      </div>`).join('');
+    cards += `<div class="info-card">
+      <div class="info-card-title"><span class="info-card-icon">📲</span>Useful Apps</div>
+      ${apps}
+    </div>`;
+  }
+
+  // Tips (full width)
+  const tips = (info.tips || []).map(t => `<li>${ut(t)}</li>`).join('');
+  if (tips) {
+    cards += `<div class="info-card full-width">
+      <div class="info-card-title"><span class="info-card-icon">💡</span>Tips</div>
+      <ul>${tips}</ul>
+    </div>`;
+  }
+
+  // Additional notes
+  if (info.additionalNotes) {
+    cards += `<div class="info-card full-width">
+      <div class="info-card-title"><span class="info-card-icon">📝</span>Additional Notes</div>
+      <div class="info-card-body">${mdu(info.additionalNotes)}</div>
+    </div>`;
+  }
+
+  return `<div class="fade-in"><h2 class="section-title">General Information</h2><div class="info-grid">${cards}</div></div>`;
+}
+
+// ================================================================
+// PHOTO LOADING (Wikimedia Commons)
+// ================================================================
+async function loadPhotos() {
+  const thumbs = document.querySelectorAll('.photo-thumb[data-query]');
+  for (const thumb of thumbs) {
+    const query = thumb.dataset.query;
+    if (!query) continue;
+
+    // Check cache
+    if (PHOTO_CACHE[query]) {
+      applyPhoto(thumb, PHOTO_CACHE[query]);
+      continue;
+    }
+
+    try {
+      const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=3&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=400&format=json&origin=*`;
+      const res = await fetch(url);
+      const data = await res.json();
+      const pages = data.query?.pages;
+      if (pages) {
+        const page = Object.values(pages).find(p => p.imageinfo?.[0]?.thumburl);
+        if (page) {
+          const imgUrl = page.imageinfo[0].thumburl;
+          PHOTO_CACHE[query] = imgUrl;
+          applyPhoto(thumb, imgUrl);
+          continue;
+        }
+      }
+    } catch (e) { /* silently fail */ }
+
+    // Hide failed photo
+    thumb.style.display = 'none';
+  }
+}
+
+function applyPhoto(thumb, url) {
+  const img = document.createElement('img');
+  img.className = 'photo-thumb';
+  img.src = url;
+  img.alt = thumb.dataset.caption || '';
+  img.dataset.caption = thumb.dataset.caption || '';
+  img.loading = 'lazy';
+  img.onerror = () => { img.style.display = 'none'; };
+  thumb.replaceWith(img);
+}
+
+// ================================================================
+// LIGHTBOX
+// ================================================================
+function initLightbox() {
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbCaption = document.getElementById('lightboxCaption');
+  const lbClose = document.getElementById('lightboxClose');
+
+  document.addEventListener('click', e => {
+    const img = e.target.closest('img.photo-thumb');
+    if (img) {
+      lbImg.src = img.src;
+      lbCaption.textContent = img.dataset.caption || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 300);
+  }
+
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+}
+
+// ================================================================
+// UTILITIES
+// ================================================================
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ================================================================
+// INIT
+// ================================================================
+loadData();
+</script>
+</body>
+</html>

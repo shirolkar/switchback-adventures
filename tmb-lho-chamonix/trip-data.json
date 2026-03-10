@@ -1,0 +1,1107 @@
+{
+  "tripName": "Tour du Mont Blanc Trek — Life Happens Outdoors",
+  "subtitle": "Chamonix, France · Switzerland · Italy",
+  "dates": "July 23 – August 2, 2026",
+  "overview": "The Tour du Mont Blanc is one of the most iconic long-distance treks in the world, circling the highest peak in Western Europe through France, Switzerland, and Italy. This guided 8-day programme by Life Happens Outdoors covers the most spectacular highlights of the 170 km circuit — from the turquoise waters of Lac Blanc perched high above Chamonix to the wild, glacier-carved valleys of the Italian side.\n\nYour journey begins with two days exploring Geneva — the cosmopolitan Swiss city on the lake — before transferring to Chamonix to begin the trek. Over six days of hiking, you'll cross three international borders, traverse five mountain passes above 2,000 metres, walk alongside glaciers, through alpine meadows carpeted with wildflowers, and into tiny mountain villages where the language changes from French to Italian to Swiss-French and back again.\n\nThe route is designed for adventurous hikers of moderate fitness — no technical gear or prior trekking experience is required. Life Happens Outdoors provides an IFMGA-certified mountain guide, an LHO Team Leader, all meals, accommodation in valley hotels and mountain huts, and airport-to-airport transfers. Your main luggage is transported between stops, so you only carry a light daypack.\n\nThis is a trip for a group of six friends from Washington DC, combining the cultural pleasures of Geneva with the raw, exhilarating beauty of the Mont Blanc massif. By the end, you'll have walked through three countries, climbed over 4,200 metres of cumulative elevation gain, and experienced some of the finest mountain scenery on earth.",
+  "highlights": [
+    "Lac Blanc — turquoise alpine lake with Mont Blanc reflected in its waters",
+    "Col de Balme — crossing the French-Swiss border with panoramic views",
+    "Grand Col Ferret — the Swiss-Italian frontier at 2,537m with Mont Dolent towering above",
+    "Col de la Seigne — entering France from Italy with stunning views of the southern Mont Blanc massif",
+    "Courmayeur — charming Italian Alpine town with espresso and Aperol spritzes",
+    "Three countries, five mountain passes, and six days of world-class trekking"
+  ],
+  "stats": {
+    "totalDistance": 73.5,
+    "totalAscent": 4287,
+    "totalDescent": 5998,
+    "duration": "11 days / 10 nights (6 trekking days)",
+    "difficulty": "Moderately Challenging",
+    "region": "Mont Blanc Massif — France, Switzerland, Italy"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Arrive Geneva",
+      "distance": 0,
+      "ascent": 0,
+      "descent": 0,
+      "difficulty": "Rest Day",
+      "estimatedHours": 0,
+      "terrain": "City — airport transfer and hotel check-in",
+      "terrainTags": ["city", "transfer"],
+      "description": "Your adventure begins with a late-afternoon arrival at Geneva Airport. The airport sits right on the edge of the city, and getting to the centre couldn't be easier — a train from the airport basement whisks you to Geneva-Cornavin (the main station) in just seven minutes. Your hotel provides a free Geneva Transport Card covering all public transit for your entire stay, so the ride costs you nothing.\n\nCheck in, drop your bags, and take a stroll along the lakefront. The Jet d'Eau — Geneva's iconic 140-metre water fountain — catches the evening light beautifully, and the promenades along Quai du Mont-Blanc are perfect for shaking off the jet lag. The air smells of lake water and linden trees.\n\nFor dinner, head to Brasserie Lipp on Rue de la Confédération — a bustling Geneva institution modelled on the Parisian original. Order the seafood platter or the choucroute garnie, share a bottle of white Fendant from the Valais, and toast to the week ahead. The restaurant hums with energy — locals, diplomats, travellers all mixed together. It's the perfect introduction to Geneva's particular blend of Swiss precision and French joie de vivre.\n\nGet to bed at a reasonable hour. You have two full days of exploring before the mountains call.",
+      "elevation": {
+        "min": 370,
+        "max": 430,
+        "profile": [[0, 430]]
+      },
+      "waypoints": [
+        {
+          "name": "Geneva Airport (GVA)",
+          "type": "transport",
+          "km": 0,
+          "notes": "Arrive late afternoon. Train to city centre every 10-15 minutes (7 min ride). Free with Geneva Transport Card."
+        },
+        {
+          "name": "Geneva-Cornavin Station",
+          "type": "transport",
+          "km": 0,
+          "notes": "Main station, walking distance to most hotels."
+        },
+        {
+          "name": "Jet d'Eau",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "Geneva's 140m fountain. Best viewed from Quai du Mont-Blanc or the jetty on the Eaux-Vives side."
+        }
+      ],
+      "weather": {
+        "tempHigh": 27,
+        "tempLow": 16,
+        "precipitation": 20,
+        "wind": "5–15 km/h variable",
+        "conditions": "Warm and sunny, possible afternoon clouds",
+        "daylight": "15h 10m",
+        "sunrise": "6:04am",
+        "sunset": "9:14pm",
+        "alerts": []
+      },
+      "waterSources": ["Hotel tap water", "Public fountains throughout Geneva"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        { "title": "Geneva Tourism — Top Things to Do", "url": "https://www.geneve.com/en/see-do/attractions/top-10-things-to-do", "type": "official" },
+        { "title": "Free Geneva Transport Card", "url": "https://www.geneve.com/en/plan-stay/getting-around/free-geneva-transport-card", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Jet d'Eau Geneva lake fountain", "caption": "The Jet d'Eau fountain on Lake Geneva" },
+        { "query": "Geneva old town lakefront evening", "caption": "Geneva's lakefront promenade at sunset" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Geneva city centre",
+        "type": "hotel",
+        "notes": "Book near Geneva-Cornavin station for easy access. Free Geneva Transport Card included with all hotels."
+      }
+    },
+    {
+      "day": 2,
+      "title": "Geneva — Old Town, Museums & Lakefront",
+      "distance": 0,
+      "ascent": 0,
+      "descent": 0,
+      "difficulty": "Easy (city walking)",
+      "estimatedHours": 0,
+      "terrain": "City streets, cobblestones, museum floors",
+      "terrainTags": ["city", "sightseeing", "museums"],
+      "description": "Your first full day in Geneva takes you through the city's cultural highlights, from the medieval Old Town to the international institutions that have made this small city a global capital.\n\nStart the morning in the Vieille Ville — Geneva's Old Town, the largest historic centre in Switzerland. Climb the 157 steps of St. Peter's Cathedral tower for a panoramic view that stretches across the lake to the Jura mountains and, on a clear day, to the distant white dome of Mont Blanc itself — the mountain you'll be circling later this week. Back at ground level, wander through the narrow cobblestone streets to Place du Bourg-de-Four, Geneva's oldest square, ringed with cafés. Stop at the Maison Tavel — the city's oldest private house, now a free museum — and stroll through Parc des Bastions to see the Reformation Wall, a 100-metre monument to Calvin and the Protestant reformers.\n\nFor lunch, duck into Chez Ma Cousine on Place du Bourg-de-Four for their signature roast chicken with crispy sautéed potatoes — fast, good-value, and cheerful. Or for something more substantial, Restaurant Les Armures on Rue du Puits-Saint-Pierre serves the best traditional Swiss fondue and raclette in the city, in a gorgeous historic setting.\n\nAfter lunch, take the tram to the Nations quarter on the right bank. The International Red Cross and Red Crescent Museum is one of Geneva's finest — three powerful exhibitions on humanitarian challenges that will leave you thinking. Allow 90 minutes. If time allows, walk next door to the Palais des Nations for a guided tour of the United Nations European headquarters (book in advance; bring your passport).\n\nIn the evening, take a Mouette — one of Geneva's charming yellow water-taxi boats — across the harbour. Walk along Quai du Mont-Blanc as the Jet d'Eau catches the golden hour light. Tonight is your splurge dinner: L'Atelier Robuchon at the Woodward Hotel — Geneva's only two-Michelin-star restaurant, with an open kitchen and counter seating. Or opt for Bayview by Michel Roth at the Hotel President Wilson, one Michelin star, with sweeping views over the lake. Book well in advance for either.",
+      "elevation": {
+        "min": 370,
+        "max": 430,
+        "profile": [[0, 375]]
+      },
+      "waypoints": [
+        {
+          "name": "St. Peter's Cathedral Tower",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "157 steps. Panoramic views of the lake, Jura, and Mont Blanc on clear days."
+        },
+        {
+          "name": "Place du Bourg-de-Four",
+          "type": "food",
+          "km": 0,
+          "notes": "Geneva's oldest square. Chez Ma Cousine for lunch. Cafés for coffee."
+        },
+        {
+          "name": "Reformation Wall (Parc des Bastions)",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "100m monument to Calvin, Knox, and the Reformation. In Parc des Bastions — a pleasant park for a stroll."
+        },
+        {
+          "name": "International Red Cross Museum",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "Tue-Sun 10am-5pm (Thu until 8pm). CHF 15. Allow 90 min. One of Geneva's best museums."
+        },
+        {
+          "name": "Palais des Nations (UN)",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "Guided tours ~1 hour. Book online in advance. Bring passport for security."
+        }
+      ],
+      "weather": {
+        "tempHigh": 27,
+        "tempLow": 16,
+        "precipitation": 20,
+        "wind": "5–15 km/h variable",
+        "conditions": "Warm and mostly sunny, possible afternoon cumulus",
+        "daylight": "15h 08m",
+        "sunrise": "6:05am",
+        "sunset": "9:13pm",
+        "alerts": []
+      },
+      "waterSources": ["Public fountains throughout Geneva", "Restaurant and museum facilities"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        { "title": "Red Cross Museum — Hours & Prices", "url": "https://redcrossmuseum.ch/en/prices-opening-hours-access/", "type": "official" },
+        { "title": "L'Atelier Robuchon — The Woodward", "url": "https://auberge.com/the-woodward/dine/latelier-robuchon/", "type": "official" },
+        { "title": "Restaurant Les Armures — Old Town", "url": "https://www.hotel-les-armures.ch/en/restaurant", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Geneva Old Town Vieille Ville St Peter Cathedral", "caption": "St. Peter's Cathedral rising above Geneva's Old Town" },
+        { "query": "International Red Cross Museum Geneva", "caption": "The International Red Cross and Red Crescent Museum" },
+        { "query": "Reformation Wall Geneva Parc des Bastions", "caption": "The Reformation Wall in Parc des Bastions" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Geneva city centre",
+        "type": "hotel",
+        "notes": "Same hotel as Night 1."
+      }
+    },
+    {
+      "day": 3,
+      "title": "Geneva — CERN, Lake Cruise & Farewell Dinner",
+      "distance": 0,
+      "ascent": 0,
+      "descent": 0,
+      "difficulty": "Easy (city walking)",
+      "estimatedHours": 0,
+      "terrain": "City streets, tram, lake boat",
+      "terrainTags": ["city", "sightseeing", "boat cruise"],
+      "description": "Your second Geneva day opens with a visit to one of the most remarkable scientific institutions on Earth. CERN — the European Organization for Nuclear Research — straddles the Swiss-French border about 8 km from the city centre. Take tram 18 from the centre (about 25 minutes) to the CERN stop.\n\nThe Science Gateway visitor centre, designed by Renzo Piano and opened in 2023, is free to enter and houses two permanent exhibitions exploring the origins of the universe and the technology behind particle physics. If you've managed to book a guided tour (free but notoriously hard to get — they open 15 days in advance and sell out in minutes), you may visit areas including underground experimental zones. Even without the guided tour, the exhibitions are world-class. Allow 2–3 hours.\n\nReturn to the city for lunch at Le Relais de l'Entrecôte on Rue du Rhône — a no-menu institution that serves exactly one thing: steak-frites with their legendary secret sauce, preceded by a walnut-dressed green salad. There's no reservation — just queue. Arrive by noon for the shortest wait. It's a fun, convivial group experience, and the profiteroles for dessert are outstanding.\n\nAfter lunch, head to the CGN dock at Jardin Anglais for a Belle Époque paddle steamer cruise on Lake Geneva. The ride to Yvoire — a walled medieval village on the French shore — takes about an hour each way, with gorgeous views of the surrounding mountains and vineyards from the deck. Wander Yvoire's stone lanes, visit the Garden of Five Senses if time allows, and catch the return boat. Alternatively, a shorter 1–2 hour cruise around the petit lac is also lovely.\n\nBefore dinner, stop at Bains des Pâquis — a public bathing spot and café jutting into the lake on the right bank. It's as local as Geneva gets. People swim, play chess, and eat simple food at long communal tables with the Jet d'Eau as a backdrop.\n\nFor your final Geneva dinner, try Il Lago at the Four Seasons Hotel des Bergues — refined northern Italian cuisine with one Michelin star — or the more casual Café du Centre on Place du Molard, one of the city's oldest brasseries, known for its seafood and buzzy atmosphere. Either way, savour it. Tomorrow, the mountains begin.",
+      "elevation": {
+        "min": 370,
+        "max": 430,
+        "profile": [[0, 375]]
+      },
+      "waypoints": [
+        {
+          "name": "CERN Science Gateway",
+          "type": "viewpoint",
+          "km": 0,
+          "notes": "Free admission. Tram 18 from city centre (~25 min). Open Tue–Sun. Guided tours must be booked 15 days in advance at visit.cern."
+        },
+        {
+          "name": "Le Relais de l'Entrecôte",
+          "type": "food",
+          "km": 0,
+          "notes": "Rue du Rhône. No reservations, no menu — just steak-frites. Arrive by noon."
+        },
+        {
+          "name": "CGN Lake Cruise (Jardin Anglais dock)",
+          "type": "transport",
+          "km": 0,
+          "notes": "Belle Époque paddle steamer to Yvoire (France). ~1h each way. Covered by Swiss Travel Pass; otherwise buy tickets at dock."
+        },
+        {
+          "name": "Bains des Pâquis",
+          "type": "food",
+          "km": 0,
+          "notes": "Public lakeside bathing spot and café. Very local. Fondue served even in summer."
+        }
+      ],
+      "weather": {
+        "tempHigh": 28,
+        "tempLow": 17,
+        "precipitation": 25,
+        "wind": "5–15 km/h variable",
+        "conditions": "Warm and sunny, slight chance of late afternoon thundershower",
+        "daylight": "15h 05m",
+        "sunrise": "6:06am",
+        "sunset": "9:11pm",
+        "alerts": []
+      },
+      "waterSources": ["Public fountains", "Restaurant and museum facilities"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        { "title": "CERN Science Gateway — Guided Tours", "url": "https://visit.cern/guided-tours", "type": "official" },
+        { "title": "CGN Lake Geneva Cruises", "url": "https://www.cgn.ch/en/our-cruises.html", "type": "official" },
+        { "title": "Il Lago — Four Seasons Geneva", "url": "https://www.opentable.com/r/il-lago-geneve", "type": "official" },
+        { "title": "Café du Centre Geneva", "url": "https://cafeducentre.ch/en/home/", "type": "official" },
+        { "title": "Patek Philippe Museum", "url": "https://www.patek.com/en/museum/plan-your-visit", "type": "official" }
+      ],
+      "photos": [
+        { "query": "CERN Science Gateway Renzo Piano building", "caption": "The CERN Science Gateway designed by Renzo Piano" },
+        { "query": "Lake Geneva paddle steamer CGN boat", "caption": "A Belle Époque paddle steamer on Lake Geneva" },
+        { "query": "Yvoire medieval village Lake Geneva France", "caption": "The medieval village of Yvoire on the French shore" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Geneva city centre",
+        "type": "hotel",
+        "notes": "Final night in Geneva. Pack for Chamonix — LHO transfer picks up in the morning."
+      }
+    },
+    {
+      "day": 4,
+      "title": "Transfer to Chamonix — Welcome Dinner",
+      "distance": 0,
+      "ascent": 0,
+      "descent": 0,
+      "difficulty": "Rest Day",
+      "estimatedHours": 0,
+      "terrain": "Road transfer, town walking",
+      "terrainTags": ["transfer", "town"],
+      "description": "This morning, Life Happens Outdoors' shared airport transfer partners collect you from your Geneva hotel and drive you to Chamonix — about 1 hour and 15 minutes through the French countryside, past Annemasse and along the Arve valley, with Mont Blanc growing ever larger through the windscreen.\n\nHotel check-in is typically around 3 PM, but you can store your bags and explore the area. Your LHO Team Leader will send a list of things to do in Chamonix. If you need to rent or purchase any last-minute gear, arriving early is wise — the outdoor shops along Rue du Docteur Paccard and Rue Joseph Vallot carry everything from trekking poles to Gore-Tex jackets. LHO recommends Marmot, Ice Peak, La Sportiva, and Decathlon as preferred brands. Shops usually close around 7 PM.\n\nIn the evening, you'll gather at 7:30 PM for the welcome team dinner at a trendy Chamonix restaurant, hosted by your LHO Team Leader and lead mountain guide. This is your first chance to meet your fellow trekkers, ask questions about the week ahead, and get excited. The guides will brief you on weather forecasts, daily routines, and what to expect.\n\nGear checks will be organised throughout the day based on your arrival time. This is when the team ensures everyone has the essentials and advises on anything missing. Your main luggage stays at the hotel — LHO transfers a duffle bag (up to 10 kg) between huts for you, so your daypack should be under 4 kg.\n\nGet a good night's sleep. Tomorrow you lace up your boots for real.",
+      "elevation": {
+        "min": 1035,
+        "max": 1035,
+        "profile": [[0, 1035]]
+      },
+      "waypoints": [
+        {
+          "name": "Geneva to Chamonix transfer",
+          "type": "transport",
+          "km": 0,
+          "notes": "LHO shared transfer. ~1h 15min drive. Included between 9 AM and 8 PM; contact LHO Base Camp for early/late arrivals."
+        },
+        {
+          "name": "Chamonix town centre",
+          "type": "food",
+          "km": 0,
+          "notes": "Gear shops on Rue du Docteur Paccard. Browse before shops close at 7 PM."
+        },
+        {
+          "name": "Welcome dinner",
+          "type": "food",
+          "km": 0,
+          "notes": "7:30 PM. Hosted by LHO Team Leader. Team introductions and trek briefing."
+        }
+      ],
+      "weather": {
+        "tempHigh": 25,
+        "tempLow": 12,
+        "precipitation": 25,
+        "wind": "5–15 km/h variable",
+        "conditions": "Warm in the valley, possible afternoon thunderstorms over the peaks",
+        "daylight": "15h 03m",
+        "sunrise": "6:06am",
+        "sunset": "9:09pm",
+        "alerts": ["Afternoon thunderstorm risk typical in late July — stay in the valley"]
+      },
+      "waterSources": ["Hotel tap water", "Public fountains in Chamonix"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        { "title": "Life Happens Outdoors — TMB Trek", "url": "https://lifehappensoutdoors.com/trip/tour-du-mont-blanc-trek/", "type": "official" },
+        { "title": "Chamonix Official Tourism", "url": "https://en.chamonix.com/", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Chamonix town centre Mont Blanc summer", "caption": "Chamonix town with Mont Blanc towering above" },
+        { "query": "Chamonix valley Aiguille du Midi summer", "caption": "The Aiguille du Midi seen from the Chamonix valley" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Chamonix Valley",
+        "type": "hotel",
+        "notes": "3-star trendy hotel. Twin share. Welcome dinner included. Single supplement available."
+      }
+    },
+    {
+      "day": 5,
+      "title": "The Spectacular Lac Blanc",
+      "distance": 8.5,
+      "ascent": 148,
+      "descent": 1299,
+      "difficulty": "Moderate–Challenging",
+      "estimatedHours": 5,
+      "terrain": "Well-worn rocky paths, steep descent on loose terrain, some ladders near Lac Blanc",
+      "terrainTags": ["rocky trail", "steep descent", "alpine lake", "ladders", "exposed sections"],
+      "description": "Your first day of trekking starts with a breathtaking view. After breakfast, you depart from the hotel and take public transport to the Flégère cable car. From there, you ride the cable car and then a chairlift to the highest accessible point, called l'Index, at around 2,385 metres. This is where the Tour du Mont Blanc trail officially begins for your group.\n\nThe views from the top are indescribable. The entire Mont Blanc massif fills the southern horizon — from the Aiguille du Midi's needle-sharp summit to the broad white dome of Mont Blanc itself, with the Aiguilles Rouges towering directly above and the Chamonix valley spread out far below. You can see why this is considered one of the finest viewpoints in the entire Alps.\n\nFrom l'Index, you trek eastward towards Lac Blanc, a trail that takes about two hours over a mix of well-worn paths and rocky terrain. The trail is well-marked but requires careful footing in places. Lac Blanc itself is a truly spectacular location — a turquoise alpine lake sitting in a granite bowl at 2,352 metres, with Mont Blanc reflected perfectly in its still waters on calm days. Weather permitting, this spot serves as your picnic location. Take your time with photographs.\n\nAfter Lac Blanc, the real work begins. You follow a descending trail toward the valley floor in the direction of Argentière, a town to the east of Chamonix. The descent is long — over 1,200 metres of elevation loss — and quite challenging but manageable. Trekking poles are highly recommended to protect your knees on the steep, rocky sections. The trail passes through alpine meadows, patches of forest, and eventually into the outskirts of town.\n\nYour evening will be spent in Argentière or the neighbouring village of Le Tour, where hot showers and a good meal await at your mountain lodge.",
+      "elevation": {
+        "min": 1250,
+        "max": 2595,
+        "profile": [[0,2385],[0.5,2450],[1.0,2520],[1.5,2560],[2.0,2595],[2.5,2520],[3.0,2352],[3.5,2250],[4.0,2100],[5.0,1950],[6.0,1750],[7.0,1550],[8.0,1350],[8.5,1250]]
+      },
+      "waypoints": [
+        {
+          "name": "Flégère Cable Car",
+          "type": "transport",
+          "km": 0,
+          "notes": "Public bus from hotel to Flégère station. Cable car + chairlift to l'Index (2,385m)."
+        },
+        {
+          "name": "L'Index viewpoint",
+          "type": "viewpoint",
+          "km": 0.5,
+          "notes": "Stunning 360° panorama. Mont Blanc massif, Aiguilles Rouges, Chamonix valley below."
+        },
+        {
+          "name": "Lac Blanc",
+          "type": "viewpoint",
+          "km": 3.0,
+          "notes": "Turquoise alpine lake at 2,352m. Iconic Mont Blanc reflection. Picnic lunch spot. Refuge du Lac Blanc has drinks."
+        },
+        {
+          "name": "Refuge du Lac Blanc",
+          "type": "food",
+          "km": 3.0,
+          "notes": "Hot drinks, snacks, basic meals available. Terrace with extraordinary views."
+        },
+        {
+          "name": "Steep descent section",
+          "type": "warning",
+          "km": 4.5,
+          "notes": "Long descent (1,200m+). Use trekking poles. Loose rocks and steep sections. Protect your knees."
+        },
+        {
+          "name": "Argentière / Le Tour",
+          "type": "food",
+          "km": 8.5,
+          "notes": "Valley villages. Hot showers and dinner at mountain lodge."
+        }
+      ],
+      "weather": {
+        "tempHigh": 24,
+        "tempLow": 11,
+        "precipitation": 30,
+        "wind": "10–25 km/h westerly",
+        "conditions": "Sunny morning, clouds building by early afternoon. Thunderstorm risk after 2 PM.",
+        "daylight": "15h 00m",
+        "sunrise": "6:07am",
+        "sunset": "9:07pm",
+        "alerts": ["At 2,500m expect temperatures 8–12°C even in sunshine", "Afternoon thunderstorm risk — aim to be descending by 1 PM"]
+      },
+      "waterSources": ["Refuge du Lac Blanc (drinks for purchase)", "Streams along descent — treat before drinking", "Mountain lodge tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Return to Flégère via chairlift",
+          "description": "From Lac Blanc, retrace the trail back to l'Index chairlift and descend to Flégère. ~2 hours.",
+          "km": 3.0
+        },
+        {
+          "name": "Descend directly to Argentière",
+          "description": "Shortcut trail directly to Argentière from La Flégère area, avoiding the Lac Blanc loop.",
+          "km": 1.5
+        }
+      ],
+      "interestingLinks": [
+        { "title": "Lac Blanc via Grand Balcon Sud on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/lac-blanc-via-grand-balcon-sud", "type": "alltrails" },
+        { "title": "Lac Blanc – Index via La Flégère on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/lac-blanc-et-l-index-de-la-gliere-via-la-flegere", "type": "alltrails" },
+        { "title": "Lac Blanc on Komoot", "url": "https://www.komoot.com/highlight/180294", "type": "komoot" },
+        { "title": "Chamonix Official Tourism", "url": "https://en.chamonix.com/", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Lac Blanc Chamonix Mont Blanc reflection", "caption": "Lac Blanc with Mont Blanc reflected in its turquoise waters" },
+        { "query": "Aiguilles Rouges panorama Mont Blanc massif", "caption": "The Mont Blanc massif viewed from the Aiguilles Rouges" },
+        { "query": "L'Index chairlift Flegere Chamonix", "caption": "The trail near l'Index above the Chamonix valley" }
+      ],
+      "accommodation": {
+        "name": "Mountain Lodge — Argentière or Le Tour",
+        "type": "mountain lodge",
+        "notes": "Mountain hut/lodge. Mixed dormitory. Hot showers available. Dinner and breakfast included. Bring sleeping bag liner and earplugs."
+      }
+    },
+    {
+      "day": 6,
+      "title": "Over the Pass into Switzerland — Col de Balme",
+      "distance": 13.0,
+      "ascent": 832,
+      "descent": 1019,
+      "difficulty": "Challenging",
+      "estimatedHours": 7,
+      "terrain": "Forest paths, alpine meadows, rocky mountain pass, dense forest descent",
+      "terrainTags": ["alpine meadow", "mountain pass", "berry fields", "cow pastures", "dense forest", "border crossing"],
+      "description": "You catch an early bus from Argentière to Le Tour to avoid a less interesting road section and get right onto the trail for the first significant ascent of the trip. From Le Tour, the path climbs steadily through berry fields and cow pastures, with Mont Blanc behind you and the Swiss Alps opening ahead. The path passes through beautiful open terrain — wild flowers, the occasional marmot whistle, and the distant clang of cowbells.\n\nAs you gain elevation, a remarkable feature appears to your right: the Le Tour glacier, which can feel incredibly close. The trail winds its way up to Col de Balme at 2,191 metres — the natural border between France and Switzerland. There's a charming coffee shop at the mountain pass where the LHO community highly recommends stopping. On clear days, the view from the col is extraordinary — Mont Blanc's entire massif behind you, the Swiss valleys stretching ahead.\n\nYou'll typically have your picnic lunch in an open field near the pass, with fantastic views of glacier-capped mountains in every direction. From the col, the descent into Switzerland begins. The path drops through dense alpine forest, with the town of Trient gradually appearing below. The approach passes through a notable pine forest, and a distinctive feature of Trient is the pink church in the town's centre.\n\nTrient is a small, quiet Swiss village nestled in a valley below the Trient Glacier. Your mountain lodge here is simple but comfortable. After the day's effort, the hot shower feels particularly good.\n\nToday you crossed an international border on foot. The language shifted from French to Swiss-French, the currency from Euro to Swiss Franc, and the mountain character subtly changed. This is what makes the TMB special — it's not just a hike, it's a journey through cultures.",
+      "elevation": {
+        "min": 1280,
+        "max": 2201,
+        "profile": [[0,1453],[1.0,1550],[2.0,1680],[3.0,1800],[4.0,1920],[5.0,2050],[5.5,2120],[6.0,2191],[6.5,2201],[7.0,2100],[8.0,1950],[9.0,1800],[10.0,1650],[11.0,1500],[12.0,1380],[13.0,1280]]
+      },
+      "waypoints": [
+        {
+          "name": "Bus from Argentière to Le Tour",
+          "type": "transport",
+          "km": 0,
+          "notes": "Early morning local bus. Short ride to avoid road section."
+        },
+        {
+          "name": "Le Tour trailhead",
+          "type": "transport",
+          "km": 0,
+          "notes": "Trail starts climbing immediately from the village."
+        },
+        {
+          "name": "Le Tour Glacier viewpoint",
+          "type": "viewpoint",
+          "km": 4.0,
+          "notes": "The glacier can feel incredibly close to the trail. Impressive feature on the right."
+        },
+        {
+          "name": "Col de Balme (2,191m) — FR/CH border",
+          "type": "summit",
+          "km": 6.0,
+          "notes": "French-Swiss border. Coffee shop at the pass. Panoramic views of Mont Blanc behind, Swiss valleys ahead."
+        },
+        {
+          "name": "Coffee shop at Col de Balme",
+          "type": "food",
+          "km": 6.0,
+          "notes": "Charming mountain café. Hot drinks and snacks. LHO community favourite stop."
+        },
+        {
+          "name": "Picnic lunch spot",
+          "type": "viewpoint",
+          "km": 6.5,
+          "notes": "Open field near the pass with glacier-capped mountain views."
+        },
+        {
+          "name": "Dense alpine forest",
+          "type": "warning",
+          "km": 10.0,
+          "notes": "The descent through forest is steep in places. Watch your footing on roots."
+        },
+        {
+          "name": "Trient — pink church",
+          "type": "viewpoint",
+          "km": 13.0,
+          "notes": "Notable pink church in the village centre. A distinctive Trient landmark."
+        }
+      ],
+      "weather": {
+        "tempHigh": 23,
+        "tempLow": 10,
+        "precipitation": 30,
+        "wind": "15–35 km/h at Col de Balme, lighter in valleys",
+        "conditions": "Clear morning, building cumulus by midday. Possible afternoon thunderstorm.",
+        "daylight": "14h 57m",
+        "sunrise": "6:08am",
+        "sunset": "9:05pm",
+        "alerts": ["Exposed at Col de Balme — wind can be strong", "Cell coverage poor to none at Col de Balme"]
+      },
+      "waterSources": ["Coffee shop at Col de Balme (purchase)", "Streams in descent — treat before drinking", "Trient lodge tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Return to Le Tour",
+          "description": "Retrace to Le Tour and take bus back to Chamonix. 3–4 hours from Col de Balme.",
+          "km": 6.0
+        }
+      ],
+      "interestingLinks": [
+        { "title": "Le Tour – Col de Balme – Trient on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/le-tour-col-de-balme-trient", "type": "alltrails" },
+        { "title": "Col de Balme on Komoot", "url": "https://www.komoot.com/highlight/3016298", "type": "komoot" },
+        { "title": "AutourduMontBlanc — TMB Route Info", "url": "https://www.autourdumontblanc.com/en/routes/all-routes/tour-du-mont-blanc", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Col de Balme Tour du Mont Blanc border crossing", "caption": "The Col de Balme — crossing from France into Switzerland" },
+        { "query": "Le Tour glacier Chamonix valley", "caption": "The Le Tour Glacier seen from the ascending trail" },
+        { "query": "Trient village church Swiss Alps", "caption": "The village of Trient with its distinctive pink church" }
+      ],
+      "accommodation": {
+        "name": "Mountain Lodge — Trient, Switzerland",
+        "type": "mountain lodge",
+        "notes": "Mountain hut/lodge. Mixed dormitory. Hot showers. Dinner and breakfast included. Currency: Swiss Franc (CHF). Cards usually accepted."
+      }
+    },
+    {
+      "day": 7,
+      "title": "Following the Black Cows to the Lake — Bovine Route",
+      "distance": 14.0,
+      "ascent": 972,
+      "descent": 805,
+      "difficulty": "Challenging",
+      "estimatedHours": 7,
+      "terrain": "Steep ascent, forest trails, alpine pastures, gentle descent to lakeside village",
+      "terrainTags": ["steep climb", "forest", "cow pastures", "alpine meadow", "lakeside village"],
+      "description": "After breakfast, the trek begins with an ascent to Col de la Forclaz. The LHO community highly recommends the berry cakes served at the café on the pass — they've become an essential part of the day, so make sure you stop. Once you've had your fix, the trail leads into a deep forest that takes you to the region known as Bovine.\n\nThe name comes from the black cows — Hérens cattle, the distinctive dark breed of the Valais — living in the pastures on the slopes. You'll walk among them, bells clanking, as the trail winds through a mix of open pasture and forest. The Bovine route is chosen over the alternative Fenêtre d'Arpette variant because it offers a more gradual and scenic passage, though it's still a full day of effort.\n\nWhen you reach the high point at around 2,043 metres, there's a clearing for lunch before you begin descending toward Champex-Lac. The descent through the forest is pleasant — the deeper you get toward the valley floor, the denser and more fragrant the alpine forest becomes. It's similar in character to the previous day's descent from Col de Balme.\n\nThe final section of the trail includes a gentle incline into Champex-Lac, the last Swiss village before crossing into Italy. Champex-Lac is an idyllic spot — a small mountain lake surrounded by pine forests, with the snow-capped peaks reflected in the still water. It's the kind of place that makes you want to stay an extra day.\n\nTonight is your last night in Switzerland. Enjoy the quiet, the clean mountain air, and the satisfaction of three strong days on the trail.",
+      "elevation": {
+        "min": 1466,
+        "max": 2043,
+        "profile": [[0,1280],[1.0,1400],[2.0,1527],[3.0,1650],[4.0,1780],[5.0,1900],[6.0,2000],[6.5,2043],[7.0,2020],[8.0,1950],[9.0,1850],[10.0,1750],[11.0,1650],[12.5,1550],[14.0,1466]]
+      },
+      "waypoints": [
+        {
+          "name": "Col de la Forclaz café",
+          "type": "food",
+          "km": 1.5,
+          "notes": "Famous berry cakes. An LHO community essential stop. Don't skip this."
+        },
+        {
+          "name": "Bovine pastures",
+          "type": "viewpoint",
+          "km": 5.0,
+          "notes": "Named for the black Hérens cattle. Open pastures with cowbells and mountain views."
+        },
+        {
+          "name": "High point — Bovine (2,043m)",
+          "type": "summit",
+          "km": 6.5,
+          "notes": "Clearing with views. Picnic lunch spot."
+        },
+        {
+          "name": "Alpine forest descent",
+          "type": "viewpoint",
+          "km": 10.0,
+          "notes": "Dense, fragrant alpine forest. Trail well-marked."
+        },
+        {
+          "name": "Champex-Lac",
+          "type": "viewpoint",
+          "km": 14.0,
+          "notes": "Idyllic mountain lake village. Last Swiss stop before Italy."
+        }
+      ],
+      "weather": {
+        "tempHigh": 22,
+        "tempLow": 9,
+        "precipitation": 30,
+        "wind": "10–25 km/h at altitude, calm in forest",
+        "conditions": "Morning clear, building clouds. Possible afternoon showers.",
+        "daylight": "14h 54m",
+        "sunrise": "6:10am",
+        "sunset": "9:04pm",
+        "alerts": ["Stay hydrated on the climb to Bovine — limited shade on open pastures"]
+      },
+      "waterSources": ["Col de la Forclaz café (purchase)", "Streams along Bovine trail — treat before drinking", "Champex-Lac lodge tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Descend to Col de la Forclaz",
+          "description": "Return to Col de la Forclaz and take road/taxi to Martigny. ~1.5 hours from Bovine.",
+          "km": 1.5
+        },
+        {
+          "name": "Road from Champex-Lac to Orsières",
+          "description": "Bus or taxi from Champex-Lac to Orsières, then train connections.",
+          "km": 14.0
+        }
+      ],
+      "interestingLinks": [
+        { "title": "Champex-Lac – Trient via Alp Bovine on AllTrails", "url": "https://www.alltrails.com/trail/switzerland/valais/alpenpasse-weg-etappe-36-champex-lac-trient", "type": "alltrails" },
+        { "title": "TMB Champex to Trient via Bovine on Komoot", "url": "https://www.komoot.com/tour/1179861740", "type": "komoot" },
+        { "title": "TMB Bovine route — The Hiking Club", "url": "https://www.thehiking.club/tour-du-mont-blanc", "type": "blog" }
+      ],
+      "photos": [
+        { "query": "Champex-Lac mountain lake Switzerland Alps", "caption": "The serene mountain lake at Champex-Lac" },
+        { "query": "Bovine trail Tour du Mont Blanc cow pastures", "caption": "The Bovine pastures with Hérens cattle and Alpine views" },
+        { "query": "Col de la Forclaz Valais Switzerland", "caption": "The trail ascending from Col de la Forclaz" }
+      ],
+      "accommodation": {
+        "name": "Mountain Lodge — Champex-Lac, Switzerland",
+        "type": "mountain lodge",
+        "notes": "Mountain hut/lodge. Mixed dormitory. Hot showers. Dinner and breakfast included. Last night in Switzerland."
+      }
+    },
+    {
+      "day": 8,
+      "title": "Buongiorno Italia! — Grand Col Ferret",
+      "distance": 9.8,
+      "ascent": 770,
+      "descent": 788,
+      "difficulty": "Challenging",
+      "estimatedHours": 6,
+      "terrain": "Open alpine pastures, rocky mountain pass, steep descent, road walking near finish",
+      "terrainTags": ["alpine pasture", "mountain pass", "border crossing", "steep descent", "glacier views"],
+      "description": "The day begins with a one-hour private van transfer from Champex-Lac to La Fouley. You avoid walking this section, which largely follows the roadside, and instead add an extra trekking day to the trip. The trail starts in La Fouley and heads upward through open pastures with incredible views toward the Grand Col Ferret — the natural border between Switzerland and Italy.\n\nMont Dolent, the only summit split between France, Switzerland, and Italy, looms above the pass. The Swiss-Italian summit of Grand Combin is behind you, and ahead lies the spectacular Val Ferret and the impressive walls characterising the Italian side of Mont Blanc. The ascent to the Grand Col Ferret at 2,537 metres is the highest point of your entire trek.\n\nThe descent from the col is relatively steep but manageable. You'll notice an immediate change in language — the customary French trail greeting of 'bonjour' switches to the Italian 'buongiorno.' At the base of the descent, an Italian mountain refuge offers the opportunity to savour your first Italian espresso. Don't spend too much time here, though — aim to arrive in the town of Courmayeur early enough to explore before shops close.\n\nAfter leaving the refuge, you continue along the trail for about an hour before taking a local bus to the town centre. Your hotel in Courmayeur provides a delightful treat after three days of mountain lodge dormitories — proper beds, hot showers, and the refined atmosphere of this chic Italian resort town.\n\nDinner will be hosted by your LHO Team Leader and guide at a local restaurant. The coffee, Aperol spritzes, and Italian cuisine are a welcome change. Courmayeur has a relaxed, elegant feel — think cobblestone streets, boutique shops, and gelato. Enjoy it.",
+      "elevation": {
+        "min": 1640,
+        "max": 2537,
+        "profile": [[0,1640],[1.0,1780],[2.0,1920],[3.0,2060],[4.0,2200],[4.5,2350],[5.0,2480],[5.5,2537],[6.0,2400],[6.5,2300],[7.0,2150],[7.5,2050],[8.5,1900],[9.8,1750]]
+      },
+      "waypoints": [
+        {
+          "name": "Private van — Champex-Lac to La Fouley",
+          "type": "transport",
+          "km": 0,
+          "notes": "~1 hour van transfer. Avoids road section."
+        },
+        {
+          "name": "La Fouley trailhead",
+          "type": "transport",
+          "km": 0,
+          "notes": "Trail starts here, ascending through open pastures."
+        },
+        {
+          "name": "Grand Col Ferret (2,537m) — CH/IT border",
+          "type": "summit",
+          "km": 5.5,
+          "notes": "Highest point of the trek! Switzerland–Italy border. Views of Mont Dolent and Grand Combin. Windy and exposed."
+        },
+        {
+          "name": "Italian mountain refuge",
+          "type": "food",
+          "km": 7.5,
+          "notes": "First Italian espresso! Basic food and drinks. Don't linger too long."
+        },
+        {
+          "name": "Local bus to Courmayeur",
+          "type": "transport",
+          "km": 9.8,
+          "notes": "Val Ferret bus to Courmayeur town centre. ~30 min ride."
+        },
+        {
+          "name": "Courmayeur town",
+          "type": "food",
+          "km": 9.8,
+          "notes": "Chic Italian Alpine resort. Gelato, coffee, boutique shops. Explore before dinner."
+        }
+      ],
+      "weather": {
+        "tempHigh": 21,
+        "tempLow": 8,
+        "precipitation": 25,
+        "wind": "20–40 km/h at Grand Col Ferret, calm in valley",
+        "conditions": "Clear morning, clouds by midday. Wind strong at the pass.",
+        "daylight": "14h 51m",
+        "sunrise": "6:11am",
+        "sunset": "9:02pm",
+        "alerts": ["Grand Col Ferret is exposed and windy — extra layer essential", "At 2,537m expect 5–10°C even on sunny days"]
+      },
+      "waterSources": ["Italian refuge (purchase)", "Streams on descent — treat before drinking", "Courmayeur hotel tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Return to La Fouley",
+          "description": "Retrace trail back to La Fouley and take van/bus to Champex-Lac or Orsières. ~3 hours from col.",
+          "km": 0
+        },
+        {
+          "name": "Bus from Val Ferret to Courmayeur",
+          "description": "If struggling after the col, continue descent to the road and flag the Val Ferret bus. Runs regularly in summer.",
+          "km": 7.5
+        }
+      ],
+      "interestingLinks": [
+        { "title": "La Fouly – Grand Col Ferret – Courmayeur on AllTrails", "url": "https://www.alltrails.com/trail/switzerland/valais/la-fouly-col-du-grand-ferret-courmayeur", "type": "alltrails" },
+        { "title": "Grand Col Ferret on Komoot", "url": "https://www.komoot.com/highlight/317247", "type": "komoot" },
+        { "title": "Courmayeur Official Tourism", "url": "https://www.courmayeurmontblanc.it/en/", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Grand Col Ferret Tour du Mont Blanc border", "caption": "The Grand Col Ferret — crossing from Switzerland into Italy at 2,537m" },
+        { "query": "Val Ferret Mont Blanc Italian side Courmayeur", "caption": "The Val Ferret with the Italian face of Mont Blanc" },
+        { "query": "Courmayeur town centre Italian Alps summer", "caption": "The charming streets of Courmayeur" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Courmayeur, Italy",
+        "type": "hotel",
+        "notes": "Comfortable hotel. Twin share. Hot showers, proper beds — a luxury after three nights in mountain lodges. Dinner at local restaurant included."
+      }
+    },
+    {
+      "day": 9,
+      "title": "The Incredible Val Veny — Col de la Seigne",
+      "distance": 14.4,
+      "ascent": 856,
+      "descent": 790,
+      "difficulty": "Challenging",
+      "estimatedHours": 7,
+      "terrain": "Forest trails, wetlands, river crossings, rocky mountain pass, long winding descent",
+      "terrainTags": ["dense forest", "wetlands", "river crossing", "mountain pass", "border crossing", "open pastures"],
+      "description": "This day holds a special place in the hearts of the LHO team, and it's a favourite among all their Team Leaders. It offers stunning views of Mont Blanc from the Italian side and includes beautiful lakes, streams, forests, and open pastures.\n\nAfter breakfast, a short bus ride takes you to La Visaille, heading west. The bus ride is brief, and you're soon on the trail, following a rushing river through a dense forest. As you gradually ascend, the tree line opens to reveal the entire valley ahead. The rivers and lakes here are fed by glacier melt from the southern slopes of Mont Blanc.\n\nYou'll pass through wetlands and cross rivers before making a more direct ascent toward Col de la Seigne at 2,516 metres. Though the col may appear long, the ascent is divided into a series of steeper and flatter sections that make it pass quickly. The LHO team typically has a picnic at the pass, weather permitting, though it can be quite windy here on sunny days.\n\nAs you begin the descent, the language changes again — from Italian 'buongiorno' back to the French 'bonjour.' You re-enter France in the Beaufort region, renowned for its cheese. The winding descent is long, but with views like these, you won't want it to end.\n\nUpon reaching the valley floor, you follow a farming road to the local bus stop and catch a ride to the small farming town of Les Chapieux — your home for the night. Be aware: there's no mobile network coverage here, so inform your loved ones in advance that you might be out of reach. The LHO Base Camp team receives regular updates and can assist if anyone inquires about you.\n\nLes Chapieux is remote and quiet — a handful of buildings in a valley surrounded by enormous peaks. The mountain lodge here is basic but welcoming.",
+      "elevation": {
+        "min": 1549,
+        "max": 2516,
+        "profile": [[0,1640],[1.0,1720],[2.0,1810],[3.0,1900],[4.0,2000],[5.0,2100],[6.0,2250],[6.5,2380],[7.0,2516],[7.5,2450],[8.0,2350],[9.0,2200],[10.0,2050],[11.0,1900],[12.0,1750],[13.5,1600],[14.4,1549]]
+      },
+      "waypoints": [
+        {
+          "name": "Bus from Courmayeur to La Visaille",
+          "type": "transport",
+          "km": 0,
+          "notes": "Short local bus ride to trailhead."
+        },
+        {
+          "name": "Rushing river and dense forest",
+          "type": "viewpoint",
+          "km": 2.0,
+          "notes": "The trail follows a glacier-fed river through forest. Beautiful morning walking."
+        },
+        {
+          "name": "Glacier-fed lakes and wetlands",
+          "type": "water",
+          "km": 4.0,
+          "notes": "Wetlands fed by glacier melt from Mont Blanc's southern slopes. River crossings on bridges."
+        },
+        {
+          "name": "Col de la Seigne (2,516m) — IT/FR border",
+          "type": "summit",
+          "km": 7.0,
+          "notes": "Italy–France border. Picnic lunch spot (weather permitting). Can be very windy. Second-highest pass of the trek."
+        },
+        {
+          "name": "Beaufort cheese region",
+          "type": "viewpoint",
+          "km": 10.0,
+          "notes": "You've re-entered France in the Beaufort region. Famous for its cheese."
+        },
+        {
+          "name": "Valley-floor bus stop",
+          "type": "transport",
+          "km": 13.0,
+          "notes": "Bus from near Ville des Glaciers to Les Chapieux."
+        },
+        {
+          "name": "Les Chapieux — no cell coverage",
+          "type": "warning",
+          "km": 14.4,
+          "notes": "No mobile network coverage. Inform family in advance. LHO Base Camp can relay messages."
+        }
+      ],
+      "weather": {
+        "tempHigh": 22,
+        "tempLow": 8,
+        "precipitation": 30,
+        "wind": "20–40 km/h at Col de la Seigne, calm in valleys",
+        "conditions": "Clear morning, clouds building. Wind strong at the pass. Possible afternoon thunderstorm.",
+        "daylight": "14h 47m",
+        "sunrise": "6:13am",
+        "sunset": "9:00pm",
+        "alerts": ["Col de la Seigne is exposed — carry warm layer and rain jacket", "No cell coverage at Les Chapieux — plan accordingly"]
+      },
+      "waterSources": ["Glacier-fed streams (treat before drinking)", "Col de la Seigne — no water at the pass", "Les Chapieux lodge tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Return to La Visaille",
+          "description": "Retrace to La Visaille and take bus back to Courmayeur. ~3–4 hours from the col.",
+          "km": 0
+        },
+        {
+          "name": "Bus from valley floor",
+          "description": "From the Beaufort side, follow the valley road to Les Chapieux or flag a vehicle. Valley is accessible by road.",
+          "km": 13.0
+        }
+      ],
+      "interestingLinks": [
+        { "title": "Ville des Glaciers – Col de la Seigne on AllTrails", "url": "https://www.alltrails.com/trail/france/savoie/ville-des-glaciers-col-de-la-seigne", "type": "alltrails" },
+        { "title": "TMB: La Ville des Glaciers – La Visaille on AllTrails", "url": "https://www.alltrails.com/trail/france/savoie/la-ville-des-glaciers-a-la-visaille", "type": "alltrails" },
+        { "title": "Col de la Seigne on Komoot", "url": "https://www.komoot.com/highlight/317843", "type": "komoot" }
+      ],
+      "photos": [
+        { "query": "Col de la Seigne Tour du Mont Blanc Italy France border", "caption": "Col de la Seigne — the border between Italy and France at 2,516m" },
+        { "query": "Val Veny Mont Blanc Italian side glaciers", "caption": "The Val Veny with glacier-fed lakes and Mont Blanc's southern face" },
+        { "query": "Les Chapieux Beaufort valley farming village Alps", "caption": "The remote farming village of Les Chapieux in the Beaufort valley" }
+      ],
+      "accommodation": {
+        "name": "Mountain Lodge — Les Chapieux, France",
+        "type": "mountain lodge",
+        "notes": "Basic mountain lodge in a remote farming village. Mixed dormitory. Dinner and breakfast included. No cell coverage — WiFi may be available at the lodge."
+      }
+    },
+    {
+      "day": 10,
+      "title": "Closing the Circle — Croix du Bonhomme to Chamonix",
+      "distance": 13.8,
+      "ascent": 709,
+      "descent": 1297,
+      "difficulty": "Challenging",
+      "estimatedHours": 7,
+      "terrain": "Mountain pass ascent, rocky trail, alpine forest descent, deep gorge with rushing water",
+      "terrainTags": ["mountain pass", "rocky path", "alpine forest", "gorge", "rushing water", "historic church"],
+      "description": "After breakfast, you join the ascending trail to Col de la Croix de Bonhomme. The final significant ascent of the trek begins just outside the hut, and the path climbs through open fields with views of the Vanoise massif behind you. This is the westernmost part of Mont Blanc. From here, you start trekking eastward, gradually making your way back to the starting point.\n\nThe ascent to Col de la Croix du Bonhomme at 2,408 metres features open fields and views that feel earned after nearly a week on the trail. At the top of the ascent is a mountain refuge where you can grab a coffee and enjoy your packed lunches. The trail continues along a rocky path for a few hundred metres before the descent begins.\n\nThe descent is the longest of the trek — nearly 1,300 metres of elevation loss. You re-enter thick alpine forest for the lower altitude portion, and the trail crosses a deep gorge with rushing water. The combination of forest, water, and the narrowing valley creates a dramatic finale.\n\nThe trail ends at the famous church of Notre Dame de la Gorge — a beautiful baroque chapel at the end of a paved road. From here, a short ride takes you back to Chamonix, where warm showers, great food, and free time for exploration await.\n\nIn the evening, you'll have a team dinner at a local restaurant or hotel, hosted by your LHO Team Leader. The first round of drinks is on LHO. It's a celebration — you've walked through three countries, crossed five major passes, and completed one of the world's great treks. The mood is euphoric, emotional, and deeply satisfying.\n\nYou did it.",
+      "elevation": {
+        "min": 1210,
+        "max": 2408,
+        "profile": [[0,1549],[1.0,1680],[2.0,1820],[3.0,1960],[4.0,2100],[4.5,2250],[5.0,2408],[5.5,2350],[6.0,2250],[7.0,2100],[8.0,1950],[9.0,1750],[10.0,1550],[11.0,1400],[12.5,1280],[13.8,1210]]
+      },
+      "waypoints": [
+        {
+          "name": "Ascent from Les Chapieux",
+          "type": "warning",
+          "km": 0,
+          "notes": "Steep climb from the start. Warm up properly."
+        },
+        {
+          "name": "Open fields with Vanoise views",
+          "type": "viewpoint",
+          "km": 3.0,
+          "notes": "Views of the Vanoise massif. Westernmost part of the Mont Blanc circuit."
+        },
+        {
+          "name": "Col de la Croix du Bonhomme (2,408m)",
+          "type": "summit",
+          "km": 5.0,
+          "notes": "Final major pass. Mountain refuge at the top with coffee and views. Packed lunch here."
+        },
+        {
+          "name": "Mountain refuge at col",
+          "type": "food",
+          "km": 5.0,
+          "notes": "Coffee and basic refreshments. Last mountain stop of the trek."
+        },
+        {
+          "name": "Deep gorge with rushing water",
+          "type": "viewpoint",
+          "km": 10.0,
+          "notes": "Dramatic gorge crossing. Rushing glacier water. Watch your footing."
+        },
+        {
+          "name": "Notre Dame de la Gorge",
+          "type": "viewpoint",
+          "km": 13.8,
+          "notes": "Beautiful baroque church at the trail's end. Historic pilgrimage site."
+        },
+        {
+          "name": "Ride back to Chamonix",
+          "type": "transport",
+          "km": 13.8,
+          "notes": "Short van/bus ride from Notre Dame de la Gorge to Chamonix."
+        }
+      ],
+      "weather": {
+        "tempHigh": 24,
+        "tempLow": 10,
+        "precipitation": 25,
+        "wind": "15–30 km/h at the col, calm in forest",
+        "conditions": "Mostly sunny, scattered clouds. Thunderstorm risk by late afternoon.",
+        "daylight": "14h 43m",
+        "sunrise": "6:14am",
+        "sunset": "8:57pm",
+        "alerts": ["Long descent — 1,300m down. Protect your knees. Trekking poles essential."]
+      },
+      "waterSources": ["Mountain refuge at Col de la Croix du Bonhomme", "Multiple streams in the gorge descent", "Chamonix hotel tap water"],
+      "escapeRoutes": [
+        {
+          "name": "Continue to Les Contamines road",
+          "description": "From Notre Dame de la Gorge, a paved road leads to Les Contamines-Montjoie with bus service to Saint-Gervais and Chamonix.",
+          "km": 13.8
+        }
+      ],
+      "interestingLinks": [
+        { "title": "TMB: Notre Dame de la Gorge – Les Chapieux on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/tmb-de-notre-dame-de-la-gorge-aux-chapieux", "type": "alltrails" },
+        { "title": "Col de la Croix du Bonhomme on Komoot", "url": "https://www.komoot.com/highlight/271832", "type": "komoot" },
+        { "title": "Life Happens Outdoors — TMB Trek", "url": "https://lifehappensoutdoors.com/trip/tour-du-mont-blanc-trek/", "type": "official" },
+        { "title": "Full Tour du Mont Blanc on AllTrails", "url": "https://www.alltrails.com/trail/france/haute-savoie/tour-du-mont-blanc-tmb", "type": "alltrails" }
+      ],
+      "photos": [
+        { "query": "Col de la Croix du Bonhomme Tour du Mont Blanc", "caption": "The Col de la Croix du Bonhomme — the final major pass" },
+        { "query": "Notre Dame de la Gorge Contamines chapel Alps", "caption": "The baroque chapel of Notre Dame de la Gorge" },
+        { "query": "Chamonix valley evening celebration Mont Blanc", "caption": "Back in Chamonix — the circle is complete" }
+      ],
+      "accommodation": {
+        "name": "Hotel in Chamonix Valley",
+        "type": "hotel",
+        "notes": "Back at the valley hotel. Twin share. Celebration dinner hosted by LHO — first round of drinks on the house!"
+      }
+    },
+    {
+      "day": 11,
+      "title": "Au Revoir — Departure to Geneva Airport",
+      "distance": 0,
+      "ascent": 0,
+      "descent": 0,
+      "difficulty": "Rest Day",
+      "estimatedHours": 0,
+      "terrain": "Road transfer to Geneva Airport",
+      "terrainTags": ["transfer", "airport"],
+      "description": "Your last day together is dedicated to airport transfers and farewells. Breakfast is included at the hotel — your final meal with the team.\n\nThe LHO transfer to Geneva Airport takes about 1 hour and 15 minutes. With your flight departing around 11 AM, you'll need an early departure — plan to leave Chamonix by 7:00–7:30 AM to arrive at Geneva Airport with comfortable time for check-in and security. Inform your LHO Team Leader of your exact departure details as early as possible so appropriate arrangements can be made.\n\nAs you wind back through the Arve valley toward Geneva, the Mont Blanc massif recedes in the rear-view mirror — the same mountain that has been your constant companion for six days of trekking. You've walked through three countries, slept in mountain huts and valley hotels, crossed five passes above 2,000 metres, and covered over 73 kilometres of some of the finest trail on earth.\n\nThe flight from Geneva back to Washington Dulles is approximately 9 hours. You'll arrive home tired, sun-kissed, and fundamentally changed by the experience.\n\nAs the Life Happens Outdoors motto says: come back different.",
+      "elevation": {
+        "min": 370,
+        "max": 1035,
+        "profile": [[0, 1035], [1, 370]]
+      },
+      "waypoints": [
+        {
+          "name": "Chamonix hotel — early breakfast",
+          "type": "food",
+          "km": 0,
+          "notes": "Breakfast included. Pack and check out. LHO transfer departs ~7:00–7:30 AM."
+        },
+        {
+          "name": "LHO transfer to Geneva Airport",
+          "type": "transport",
+          "km": 0,
+          "notes": "~1h 15min drive. Included in LHO package. Drop-off at departure terminal."
+        },
+        {
+          "name": "Geneva Airport (GVA)",
+          "type": "transport",
+          "km": 0,
+          "notes": "Flight ~11 AM to Washington Dulles. Allow 2+ hours for check-in and security."
+        }
+      ],
+      "weather": {
+        "tempHigh": 27,
+        "tempLow": 16,
+        "precipitation": 15,
+        "wind": "5–10 km/h variable",
+        "conditions": "Warm and sunny in Geneva",
+        "daylight": "14h 39m",
+        "sunrise": "6:16am",
+        "sunset": "8:55pm",
+        "alerts": []
+      },
+      "waterSources": ["Hotel breakfast", "Airport facilities"],
+      "escapeRoutes": [],
+      "interestingLinks": [
+        { "title": "Geneva Airport (GVA)", "url": "https://www.gva.ch/en/", "type": "official" }
+      ],
+      "photos": [
+        { "query": "Mont Blanc massif Chamonix valley morning panorama", "caption": "A final view of the Mont Blanc massif from the Chamonix valley" },
+        { "query": "Geneva Airport GVA departure", "caption": "Geneva Airport — heading home" }
+      ],
+      "accommodation": {
+        "name": "N/A — Departure day",
+        "type": "hotel",
+        "notes": "No overnight stay. Flight from Geneva ~11 AM."
+      }
+    }
+  ],
+  "preparation": {
+    "fitnessLevel": "You should be comfortable hiking 10–15 km per day on varied terrain, carrying a daypack under 4 kg. The longest day involves 14.4 km with 972m of ascent. No prior trekking experience is required, but a moderate degree of physical fitness is important to enjoy the experience. LHO welcomes first-timers.",
+    "trainingWeeks": 10,
+    "schedule": [
+      {
+        "weeks": "1–3",
+        "focus": "Base Building",
+        "description": "3–4 walks per week, starting at 5–8 km on mixed terrain (hills preferred). Include one longer weekend walk (10 km). Focus on building a regular habit. If you don't have hills nearby, use stairclimbers or stadium steps."
+      },
+      {
+        "weeks": "4–6",
+        "focus": "Endurance & Elevation",
+        "description": "Increase weekend walks to 12–15 km with significant elevation gain (500m+). Wear your trekking boots and carry a loaded daypack (4–5 kg) to break in gear. Add 2 midweek cardio sessions (running, cycling, or swimming). Focus on sustained uphill effort."
+      },
+      {
+        "weeks": "7–8",
+        "focus": "Peak Load — Back-to-Back Days",
+        "description": "Simulate trek conditions with back-to-back long days: Saturday 14 km with elevation, Sunday 10 km. This is the most important training phase — your body needs to learn to recover overnight and perform again the next day. Practice descending technique with trekking poles."
+      },
+      {
+        "weeks": "9–10",
+        "focus": "Taper & Gear Testing",
+        "description": "Reduce volume by 30%. Shorter walks (8–10 km) at moderate intensity. Test all gear you plan to bring — boots, poles, rain jacket, pack. Address any blister hotspots. Stay active but arrive at the trek rested, not exhausted."
+      }
+    ],
+    "physicalDemands": "The TMB involves 6 consecutive days of hiking with daily distances of 8.5–14.4 km and ascents of 148–972m. The highest point is 2,537m (Grand Col Ferret). Mountain weather is unpredictable — you may experience heat, cold, rain, and wind on the same day. The descents are often harder than the ascents, with steep rocky trails putting significant load on knees and ankles. You carry only a daypack (<4 kg) as LHO transfers your main luggage between stops.",
+    "recommendedTraining": [
+      "Practice long descents with trekking poles — the TMB has nearly 6,000m of total descent, and knee protection is critical",
+      "Train on uneven, rocky terrain when possible — smooth treadmills don't prepare your ankles for mountain trails",
+      "Do at least 3 back-to-back long hiking days in the final weeks to simulate multi-day trek conditions",
+      "Break in your trekking boots thoroughly — at least 50 km of walking before the trip",
+      "Practice hiking in rain gear to ensure it's comfortable and doesn't restrict movement",
+      "Strengthen your core and legs with squats, lunges, and step-ups — these muscles take the brunt on steep terrain"
+    ],
+    "whatToExpect": [
+      { "day": 1, "description": "Arrival day — jet lag may hit hard after the 8-hour flight from DC. Walk along the lakefront to stay awake, but don't overdo it. Hydrate well. Go to bed at a reasonable hour." },
+      { "day": 2, "description": "Full day of city walking in Geneva (10–15k steps). Feet will be active but the terrain is flat. Easy on the body, stimulating for the mind." },
+      { "day": 3, "description": "Another full city day. You may feel pre-trek anticipation building. Enjoy the lake cruise and let your body rest before tomorrow's transfer." },
+      { "day": 4, "description": "Transfer day — no physical demands. Use this time to hydrate, check gear, and mentally prepare. The welcome dinner gets the adrenaline flowing." },
+      { "day": 5, "description": "First trekking day. The cable car and chairlift handle most of the ascent, but the 1,300m descent is tough on legs that haven't adjusted yet. Expect sore quads and possibly some knee discomfort. Trekking poles are non-negotiable. Energy levels high from excitement." },
+      { "day": 6, "description": "The first full ascent day — 832m up to Col de Balme. Your body is still adjusting. Expect to feel the effort on the climb, but the views energise you. The descent into Trient adds another 1,000m of downhill. Legs will be noticeably tired at dinner." },
+      { "day": 7, "description": "Three days in. Muscles are adapting but fatigue is cumulative. The Bovine route is steady rather than dramatic — a good day to find your rhythm. Champex-Lac's peaceful setting provides mental recovery." },
+      { "day": 8, "description": "Grand Col Ferret at 2,537m is the highest point. You may notice mild breathlessness at altitude, which is normal. The descent is steep but manageable. Arriving at a proper hotel in Courmayeur provides a morale boost." },
+      { "day": 9, "description": "Day five of hiking. Your body is now adapted to the daily routine. The Val Veny is beautiful but long (14.4 km). The ascent to Col de la Seigne demands sustained effort. Fatigue is real but manageable. No cell coverage at Les Chapieux can feel isolating." },
+      { "day": 10, "description": "Final trekking day. Emotional energy is high — you're closing the circle. The 1,300m descent is long and hard on tired legs. Trekking poles essential. The finish at Notre Dame de la Gorge and return to Chamonix bring a wave of accomplishment. Celebration dinner well-earned." },
+      { "day": 11, "description": "Early morning transfer. You'll feel tired but deeply satisfied. Muscles will be sore for several days after returning home. The 9-hour flight is a good time to process the experience." }
+    ]
+  },
+  "gear": [
+    {
+      "category": "Sleeping",
+      "items": [
+        { "name": "Sleeping bag liner", "essential": true, "notes": "Mandatory in some mountain huts. Silk or cotton. LHO specifically recommends bringing one." },
+        { "name": "Inflatable travel pillow", "essential": false, "notes": "Hut pillows are basic. A small inflatable pillow improves sleep significantly." },
+        { "name": "Reusable earplugs", "essential": true, "notes": "Dormitories are noisy. High-quality earplugs are essential for rest between trekking days." }
+      ]
+    },
+    {
+      "category": "Face, Neck & Head",
+      "items": [
+        { "name": "Buff or scarf (neck warmer)", "essential": true, "notes": "Multi-use: sun protection, wind protection, warmth. Bring one." },
+        { "name": "Sun hat or cap", "essential": true, "notes": "UV is intense above 2,000m. Wide brim preferred." },
+        { "name": "Warm beanie", "essential": true, "notes": "For early mornings and mountain passes. Temperatures drop fast at altitude." },
+        { "name": "Sunglasses (Category 3 or 4)", "essential": true, "notes": "High UV at altitude. Category 3 minimum; 4 preferred near snow." }
+      ]
+    },
+    {
+      "category": "Upper Body",
+      "items": [
+        { "name": "Warm base layer (merino or synthetic)", "essential": true, "notes": "For mornings and altitude. Avoid cotton — it doesn't dry." },
+        { "name": "Quick-dry t-shirts × 3–4", "essential": true, "notes": "Rotate daily. Synthetic or merino. Wash and dry overnight when possible." },
+        { "name": "Fleece or warm mid-layer", "essential": true, "notes": "For mornings, mountain passes, and evenings in huts." },
+        { "name": "Down or synthetic insulated jacket", "essential": true, "notes": "Light and packable. Essential for passes and cold mornings." },
+        { "name": "Waterproof rain jacket (Gore-Tex)", "essential": true, "notes": "Non-negotiable. Afternoon thunderstorms are common. Must be breathable for hiking." },
+        { "name": "Rain poncho", "essential": false, "notes": "Covers backpack too. Useful as extra rain protection over the jacket." }
+      ]
+    },
+    {
+      "category": "Lower Body",
+      "items": [
+        { "name": "Warm base layer (lower)", "essential": true, "notes": "For cold mornings and mountain hut evenings." },
+        { "name": "Trekking pants", "essential": true, "notes": "Quick-dry, stretchy. Convertible zip-offs work well." },
+        { "name": "Trekking shorts", "essential": false, "notes": "For warm valley days. Optional if you have convertible pants." },
+        { "name": "Waterproof rain pants", "essential": true, "notes": "Lightweight overpants for rain. Full-zip side entry is easier over boots." }
+      ]
+    },
+    {
+      "category": "Feet & Hands",
+      "items": [
+        { "name": "Liner gloves", "essential": true, "notes": "For cool mornings and mountain passes." },
+        { "name": "Gore-Tex gloves", "essential": false, "notes": "For rain and wind at altitude. Optional but recommended." },
+        { "name": "Warm trekking socks (wool or synthetic)", "essential": true, "notes": "At least 1 pair for cold mornings." },
+        { "name": "Light trekking socks × 5", "essential": true, "notes": "Wool or synthetic blend. Rotate daily. Never hike in cotton socks." },
+        { "name": "Waterproof high-ankle trekking boots", "essential": true, "notes": "The single most important piece of gear. Must be well broken-in (50+ km). Ankle support essential for rocky descents. LHO recommends La Sportiva." }
+      ]
+    },
+    {
+      "category": "Technical Gear",
+      "items": [
+        { "name": "30-litre daypack", "essential": true, "notes": "Your main luggage is transferred. Daypack carries water, lunch, layers, rain gear. Keep it under 4 kg." },
+        { "name": "Waterproof backpack cover", "essential": true, "notes": "Or use a dry bag liner inside the pack." },
+        { "name": "Travel luggage (duffle bag)", "essential": true, "notes": "Up to 10 kg transferred between stops by LHO. Must be a duffle, not a hard suitcase." },
+        { "name": "Adjustable trekking poles", "essential": true, "notes": "Essential for steep descents (6,000m total descent). Collapsible for travel. LHO strongly recommends." },
+        { "name": "Reusable water bottles × 2 (1L each)", "essential": true, "notes": "2L total capacity. Refill at huts and streams. LHO provides limited refills (1.5L/day) when tap water unavailable." },
+        { "name": "Outdoor multisport watch", "essential": false, "notes": "GPS, altimeter, heart rate. Useful but not required." }
+      ]
+    },
+    {
+      "category": "Personal Items & Comfort",
+      "items": [
+        { "name": "Sleepwear", "essential": true, "notes": "Lightweight. Huts can be warm or cold." },
+        { "name": "Toiletries (biodegradable)", "essential": true, "notes": "Biodegradable soap and shampoo. Minimal packaging. Huts have limited washing facilities." },
+        { "name": "Sunscreen SPF 50+", "essential": true, "notes": "UV is intense at altitude. Reapply frequently. Small tube to save weight." },
+        { "name": "Light flip-flops", "essential": false, "notes": "For showers and hut evenings. Optional but nice to have." },
+        { "name": "Quick-dry towel", "essential": true, "notes": "Microfibre. Huts rarely provide towels." },
+        { "name": "Personal medication", "essential": true, "notes": "Bring enough for the full trip plus extras. Include blister plasters and pain relief." },
+        { "name": "Hand sanitiser and wipes", "essential": true, "notes": "Access to soap and water can be intermittent at mountain huts." }
+      ]
+    },
+    {
+      "category": "Documents & Tech",
+      "items": [
+        { "name": "Passport", "essential": true, "notes": "Must have 6+ months validity. You cross three international borders." },
+        { "name": "Flight information (printed)", "essential": true, "notes": "Give a copy to LHO for transfer coordination." },
+        { "name": "Travel & medical insurance documents", "essential": true, "notes": "Must cover trekking in France, Switzerland, and Italy. Include helicopter evacuation coverage. LHO partners with Global Rescue." },
+        { "name": "Outlet adaptors", "essential": true, "notes": "France and Italy use Type C/E (Europlug). Switzerland uses Type J. Bring both." },
+        { "name": "Power bank", "essential": false, "notes": "Charging at huts is limited. A 10,000 mAh bank gets you through 2–3 days." },
+        { "name": "Offline maps downloaded", "essential": true, "notes": "Download Gaia GPS, Organic Maps, or the Tour du Mont Blanc App maps before departure. Cell coverage is poor to non-existent at altitude." }
+      ]
+    }
+  ],
+  "generalInfo": {
+    "gettingThere": "Fly from Washington Dulles (IAD) to Geneva Airport (GVA). United Airlines offers direct daily flights in summer (~8h 20min). SWISS also flies direct 3x/week. One-stop options via Air France (Paris CDG), Lufthansa (Frankfurt/Munich), or British Airways (London Heathrow) are often cheaper.\n\nGeneva Airport is compact and efficient. The train station is in the basement of the terminal — trains to Geneva-Cornavin (city centre) run every 10–15 minutes and take just 7 minutes. Your hotel provides a free Geneva Transport Card covering all public transit.\n\nFor the transfer from Geneva to Chamonix on Day 4 (Sunday July 26), Life Happens Outdoors provides a shared shuttle included in the trip package. The transfer operates between 9 AM and 8 PM — contact LHO Base Camp in advance to confirm your pickup time. The drive takes about 1 hour 15 minutes via Annemasse and the Arve valley.\n\nOn departure day (Sunday August 2), LHO transfers you from the Chamonix hotel to Geneva Airport. With an ~11 AM flight, plan to depart Chamonix by 7:00–7:30 AM.",
+    "permits": "No special hiking permits are required for the Tour du Mont Blanc. The trail crosses through France, Switzerland, and Italy — all Schengen Area countries. Your passport is sufficient for border crossings, which are unmarked mountain passes with no checkpoints.\n\nLHO handles all logistics including accommodation bookings, mountain hut reservations, and transport arrangements. There are no park entrance fees for the TMB trail itself.",
+    "emergency": "In an emergency on the trail, call 112 (European emergency number, works in all three countries). For country-specific mountain rescue: France PGHM +33 4 50 53 16 89, Switzerland Rega 1414 (or +41 333 333 333 from foreign phone), Italy CNSAS 800 800 319. Your LHO Team Leader carries a first aid kit and is trained in emergency protocols. The team also carries a satellite communicator for areas without cell coverage.",
+    "emergencyContacts": [
+      { "service": "European Emergency", "number": "112", "notes": "Works in all three countries, any phone, any network" },
+      { "service": "PGHM Chamonix (French mountain rescue)", "number": "+33 4 50 53 16 89", "notes": "Covers French TMB sections. Also accepts SMS." },
+      { "service": "Rega (Swiss helicopter rescue)", "number": "1414", "notes": "From Swiss number. Use +41 333 333 333 from foreign phone." },
+      { "service": "CNSAS (Italian mountain rescue)", "number": "800 800 319", "notes": "Toll-free in Italy. Covers Courmayeur/Val Ferret section." },
+      { "service": "Chamonix Hospital", "number": "+33 4 50 53 84 00", "notes": "ER open 8 AM – 8 PM. Minor trauma and mountain injuries." },
+      { "service": "Sallanches Hospital (24/7 ER)", "number": "+33 4 50 47 30 30", "notes": "Full trauma capability. Main referral hospital for serious injuries." },
+      { "service": "LHO Base Camp (WhatsApp)", "number": "+44 7949 0803 52", "notes": "Life Happens Outdoors team. Can relay messages to family if you're in a no-coverage zone." }
+    ],
+    "currency": "Three currencies on this trip: Swiss Franc (CHF) in Geneva and the Swiss TMB sections (Trient, Champex-Lac), Euro (EUR) in France (Chamonix, Les Chapieux) and Italy (Courmayeur). Credit and debit cards are widely accepted, including at most mountain huts. Currency exchange available at Geneva Airport. ATMs in all valley towns. Tipping: not expected but appreciated — LHO suggests ~125 GBP per person for the mountain guide, given as a group tip at trip's end.",
+    "language": "French in France and western Switzerland (Geneva, Chamonix), Italian in Courmayeur, and Swiss-French/German in the Valais. English is widely understood in Geneva, Chamonix, and Courmayeur. Less so in smaller villages (Trient, Les Chapieux). Your LHO guide and Team Leader speak English. Useful phrases: 'Bonjour' (hello, French), 'Buongiorno' (hello, Italian), 'Merci/Grazie' (thank you), 'L'addition' (the bill, French).",
+    "mobileCoverage": "Cell coverage is excellent in valley towns (Chamonix, Courmayeur, Geneva) but poor to non-existent at altitude and mountain passes. Specific dead zones: Col de Balme, Grand Col Ferret, Col de la Seigne, Col de la Croix du Bonhomme, and the entire Les Chapieux area. Mountain huts generally do NOT have WiFi. Download all maps offline before departure. The LHO Base Camp team maintains communication with your guide via satellite and can relay messages to family.",
+    "healthInsurance": "Travel insurance covering trekking in the European Alps is mandatory. Your policy MUST include: (1) helicopter evacuation coverage (minimum EUR 30,000), (2) coverage for trekking up to 3,000m altitude, (3) medical expenses in France, Switzerland, and Italy, (4) trip cancellation/interruption. LHO partners with Global Rescue (memberships from $139). Helicopter rescue in the Alps is NOT free — costs can exceed EUR 10,000 without insurance. Verify your policy does not exclude 'adventure activities' or 'trekking above 2,000m.'",
+    "visaInfo": "US citizens do not need a visa for the Schengen Area for stays under 90 days. Your passport must be valid for at least 6 months beyond your travel dates and have at least 2 blank pages. France, Switzerland, and Italy are all Schengen member states — once you enter Switzerland at Geneva, you can move freely between the three countries.",
+    "usefulApps": [
+      { "name": "Tour du Mont Blanc App", "description": "Free, works offline. All POIs, trail segments, and stage planning for the TMB." },
+      { "name": "Gaia GPS", "description": "Best offline topographic maps for the Alps. GPS tracking and route recording. Premium subscription required for map downloads." },
+      { "name": "Organic Maps", "description": "Completely free offline maps based on OpenStreetMap. Good backup navigation option." },
+      { "name": "Windy", "description": "Detailed weather forecasts including wind, precipitation, cloud cover, and thunderstorm alerts. Essential for Alpine weather monitoring." },
+      { "name": "Rega App (Switzerland)", "description": "Swiss air rescue. Auto-transmits your GPS coordinates to rescue services when you call." },
+      { "name": "Google Translate", "description": "Offline language packs for French and Italian. Camera mode translates menus and signs in real-time." }
+    ],
+    "additionalNotes": "**Luggage:** LHO transfers a duffle bag (max 10 kg) between stops. Your daypack should be under 4 kg — water, lunch, rain jacket, warm layer, and camera. Leave main luggage at the Chamonix hotel.\n\n**Meals:** All meals are included from the welcome dinner (Day 4) through breakfast on departure day (Day 11). Lunches are packed sandwiches when leaving from huts, or sandwiches from Chamonix. Mountain hut dinners are hearty communal meals. Vegetarian options available — inform LHO in advance. Non-pork eaters must notify before the trip.\n\n**Photography:** LHO covers all trips in 4K photography. Your Team Leader will share high-resolution images after the trek.\n\n**Gear rental:** Trekking poles, rain jackets, and boots can be rented in Chamonix. However, LHO recommends owning your boots and breaking them in thoroughly. Preferred brands: Marmot, La Sportiva, Decathlon.\n\n**Geneva pre-trip bookings:** Book CERN guided tours exactly 15 days in advance at visit.cern (they sell out in minutes). Book UN Palais des Nations tours online. Reserve fine dining restaurants (L'Atelier Robuchon, Bayview, Il Lago) 3–4 weeks ahead for Friday/Saturday in late July.",
+    "tips": [
+      "Start each hiking day early — afternoon thunderstorms are common in late July. Aim to be descending by 1–2 PM.",
+      "Break in your boots with at least 50 km of walking before the trip. Blisters are the #1 issue on multi-day treks.",
+      "Bring 2 litres of water capacity but don't fill both bottles at the start — water is heavy. Fill up at each waypoint.",
+      "The descents are harder than the ascents on the TMB. Practice downhill technique with trekking poles before you go.",
+      "Pack a ziplock bag with toilet paper, hand sanitiser, and a small plastic bag for waste — trail facilities are rare.",
+      "Mountain hut dormitories are noisy. Quality earplugs make the difference between a good night and a miserable one.",
+      "The Les Chapieux section (Day 9) has zero cell coverage. Send a message to family before you leave Courmayeur.",
+      "Currency changes three times. Cards work almost everywhere, but carry €50 and CHF 50 in small notes for mountain cafés.",
+      "Geneva's Transport Card is free with any hotel stay — use it for trains, trams, buses, and the harbour water taxis.",
+      "Tipping the mountain guide is expected and appreciated. LHO suggests ~125 GBP per person, given as a group envelope at trip's end."
+    ]
+  }
+}
